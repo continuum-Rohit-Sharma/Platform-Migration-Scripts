@@ -1,0 +1,14 @@
+{ "name": "performanceProcessorMetric",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "numOfProcesses", "type": "long"},
+    { "name": "percentUserTime", "type": "double"},
+    { "name": "percentSystemTime", "type": "double"},
+    { "name": "percentIOTime", "type": "double"},
+    { "name": "percentUtil", "type": "double"},
+    { "name": "percentIdleTime", "type": "double"},
+    { "name": "percentInterruptTime", "type": "double"},
+    { "name": "interruptsPerSec", "type": "long"}
+    ]
+}

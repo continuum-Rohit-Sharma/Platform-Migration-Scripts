@@ -1,0 +1,7 @@
+{ "name": "startupStatus",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+      { "name": "lastBootUpTimeUTC", "type": "string"}  
+    ]
+}

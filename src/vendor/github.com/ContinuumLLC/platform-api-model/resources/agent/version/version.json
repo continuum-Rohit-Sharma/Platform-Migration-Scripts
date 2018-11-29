@@ -1,0 +1,16 @@
+{
+  "name": "agentVersion",
+  "type":  "resource",
+  "version": "2.0",
+   "attributes": [
+     { "name": "partnerId", "type": "string"},
+     { "name": "clientId", "type": "string"},
+     { "name": "siteId", "type": "string"},
+     { "name": "agentId", "type": "string"},
+     { "name": "endpointId", "type": "string"},
+     { "name": "manifestVersion", "type": "string", "description": "Manifest Version available on endpoint"},
+     { "name": "agentTimestampUTC", "type": "timestamp", "description": "UTC time form endpoint at the time of version generation"},
+     { "name": "dcTimestampUTC", "type": "timestamp", "description": "UTC time at DC on recieving data"},
+     { "name": "components", "type": "Components[]", "description": "Component along with their versions"}
+   ]
+ }

@@ -1,0 +1,48 @@
+{
+  "createTimeUTC": "2017-02-05T19:15:53.489110939Z",
+  "createdBy": "/continuum/agent/plugin/systemState",
+  "name": "systemState",
+  "type": "systemStateCollection",
+  "endpointID": "3f854e46-3888-444f-9b99-9b5ec3ed76c4",
+  "partnerID": "50016370",
+  "clientID": "50110223",
+  "siteID": "50110223",
+  "startupStatus" :{
+    "lastBootUpTimeUTC" : "2017-02-05T19:15:53.489110939Z"
+  },
+  "lastLoggedOnUser" :{
+    "username": "CORP\\user1",
+    "logonTime" : "2018-09-11T12:32:50Z",
+    "status" : "Active",
+    "isAdmin" : true
+},
+  "loggedOnUsers" :[
+    {
+      "username": "CORP\\user1",
+      "sessionID" : "321",
+      "sessionName" : "Console",
+      "status" : "Active",
+      "client" : "",
+      "isAdmin" : true,
+      "logonTime" : "2018-09-11T12:32:50Z"
+    },
+    {
+      "username": "CORP\\user2",
+      "sessionID" : "123",
+      "sessionName" : "Console",
+      "status" : "Active",      
+      "client" : "",
+      "isAdmin" : false,
+      "logonTime" : "2018-08-14T12:32:50Z"
+    },    
+    {
+      "username": "CORP\\user3",
+      "sessionID" : "111",
+      "sessionName" : "",
+      "status" : "Active",      
+      "client" : "1.2.3.4",
+      "isAdmin" : true,
+      "logonTime" : "2018-07-18T12:32:50Z"
+    }    
+  ]
+}

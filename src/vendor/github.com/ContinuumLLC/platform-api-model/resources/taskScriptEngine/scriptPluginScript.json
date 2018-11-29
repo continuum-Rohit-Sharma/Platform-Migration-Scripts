@@ -1,0 +1,12 @@
+{ "name": "scriptPluginScript",
+ "type":  "resource",
+ "version": "1.0",
+ "attributes": [
+     { "name": "executor",                  "type": "string", "description": "Interpreter name"},
+     { "name": "executorVersion",           "type": "int",    "description": "Major version of executor that is supported"},
+     { "name": "body",                      "type": "string", "description": "Sequence of instructions"},
+     { "name": "outputFormatType",          "type": "string", "description": "Format of script output"},
+     { "name": "SendIdenticalCounter",      "type": "int",    "description": "Count of identical script outputs"},
+     { "name": "SuppressIdenticalCounter",  "type": "int",    "description": "Count of suppressed script outputs"}
+   ]
+}

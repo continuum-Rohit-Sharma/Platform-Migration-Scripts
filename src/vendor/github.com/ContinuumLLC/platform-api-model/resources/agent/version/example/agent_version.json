@@ -1,0 +1,19 @@
+{
+    "partnerId": "P1",
+    "clientId": "C1",
+    "siteId": "S1",
+    "agentId": "db84c87c-568e-4442-a45d-934674660b85",
+    "endpointId": "db84c87c-568e-4442-a45d-934674660b85",
+    "manifestVersion": "1.0.382",
+    "agentTimestampUTC": "2018-05-24T12:24:53.489110938Z",
+    "dcTimestampUTC": "2018-05-24T12:25:53.489110938Z",
+    "components": [
+        {"name": "platform-agent-core", "version": "1.0.912", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"},
+        {"name": "platform-agent-manager", "version": "1.0.20", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"},
+        {"name": "platform-eventlog-plugin", "version": "1.0.99", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"},
+        {"name": "platform-performance-plugin", "version": "1.0.101", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"},
+        {"name": "platform-scripting-plugin", "version": "1.0.52", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"},
+        {"name": "platform-asset-plugin", "version": "1.0.200", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"},
+        {"name": "platform-systemstate-plugin", "version": "1.0.20", "lastModifiedOn": "2018-05-11T12:25:53.489110938Z"}
+    ]
+}

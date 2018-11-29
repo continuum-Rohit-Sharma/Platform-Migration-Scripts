@@ -1,0 +1,14 @@
+{
+    "name": "assetPhysicalDrive",
+    "type": "resource",
+    "version": "2.0",
+    "attributes": [{
+            "name": "Type",
+            "type": "string"
+        },
+        {
+            "name": "partitionData",
+            "type": "assetDrivePartition[]"
+        }
+    ]
+}

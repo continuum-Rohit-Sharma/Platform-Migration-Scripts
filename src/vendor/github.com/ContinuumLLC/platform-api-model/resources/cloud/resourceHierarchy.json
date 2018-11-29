@@ -1,0 +1,11 @@
+{
+    "name":"resourcehierarchy",
+    "type":"resource",
+    "version":"2.0",
+    "attributes":[
+        { "name": "title", "type": "string"},
+        { "name": "id", "type": "string"},
+        { "name": "name", "type": "string"},
+        { "name": "level", "type": "int"}
+    ]
+}

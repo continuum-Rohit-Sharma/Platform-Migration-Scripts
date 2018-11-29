@@ -1,0 +1,11 @@
+{
+    "filter": "Partner",
+    "mapping": [
+        {
+            "partner": "123"
+        },
+        {
+            "partner": "124"
+        }
+    ]
+}

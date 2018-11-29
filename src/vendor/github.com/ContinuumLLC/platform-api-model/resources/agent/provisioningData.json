@@ -1,0 +1,13 @@
+{ "name": "provisioningData",
+ "type":  "resource",
+ "version": "2.0",
+ "attributes": [
+    { "name": "endpointID", "type": "string"},
+    { "name": "agentID", "type": "string"},
+    { "name": "partnerID", "type": "string"},
+    { "name": "siteID", "type": "string"},
+    { "name": "clientID", "type": "string"},
+    { "name": "legacyRegID", "type": "string"},
+    { "name": "sysInfo", "type": "systemInfo"}
+  ]
+}

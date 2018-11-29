@@ -1,0 +1,27 @@
+{
+    "name": "eventLogDomain",
+    "type": "domain",
+    "version": "1.0",
+    "applicableEntities": [
+        {
+            "name": "eventLogCollection",
+            "type": "resource",
+            "version": "1.0"
+		}
+	],
+    "operations": [
+        {
+            "name": "shutdownPlugin",
+            "restpath": "GET $ROOT/shutdown",
+            "scope": "public",
+            "pluginpath": "/eventlog",
+            "returntype": "void"
+        }, {
+            "name": "refreshConfiguration",
+            "restpath": "GET $ROOT/config/refresh",
+            "scope": "public",
+            "pluginpath": "/eventlog",
+            "returntype": "void"
+        }
+	]
+}

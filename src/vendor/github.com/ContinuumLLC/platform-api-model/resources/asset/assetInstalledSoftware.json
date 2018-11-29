@@ -1,0 +1,13 @@
+{ 
+  "name": "assetInstalledSoftware",
+  "type":  "resource",
+  "version": "2.0",
+  "attributes": [
+    { "name": "name", "type": "string"},
+    { "name": "publisher", "type": "string"},
+    { "name": "version", "type": "string"},
+    { "name": "installDate", "type": "string"},
+    { "name": "userName", "type": "string"},
+    { "name": "lastAccessDateTime", "type": "string"}
+  ]
+}

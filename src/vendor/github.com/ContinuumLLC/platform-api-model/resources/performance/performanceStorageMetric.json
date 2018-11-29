@@ -1,0 +1,19 @@
+{ "name": "performanceStorageMetric",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+        { "name": "idleTime", "type": "double"},
+        { "name": "writeCompleted", "type": "long"},
+        { "name": "writeTimeMs", "type": "long"},
+        { "name": "AvgDiskWriteQueueLength", "type": "long"},
+        { "name": "AvgDiskSecPerWrite", "type": "long"},
+        { "name": "readCompleted", "type": "long"},
+        { "name": "readTimeMs", "type": "long"},
+        { "name": "AvgDiskReadQueueLength", "type": "long"},
+        { "name": "AvgDiskSecPerRead", "type": "long"},                
+        { "name": "freeSpaceBytes", "type": "long"},
+        { "name": "usedSpaceBytes", "type": "long"},
+        { "name": "totalSpaceBytes", "type": "long"},
+        { "name": "diskTimeTotal", "type":"double"}    
+    ]
+}

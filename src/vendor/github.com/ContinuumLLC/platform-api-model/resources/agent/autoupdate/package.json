@@ -1,0 +1,12 @@
+{
+  "name": "package",
+  "type":  "resource",
+  "version": "2.0",
+   "attributes": [
+     { "name": "name", "type": "string" , "description": "Application Package Name"},
+     { "name": "type", "type": "string", "description": "Application Package Type (e.g. Core / Application / SRP / LRP)"},
+     { "name": "version", "type": "string", "description": "Version of the package"},
+     { "name": "sourceUrl", "type": "string", "description": "Repository/Download server URL to download this Package"},
+     { "name": "operation", "type": "string", "description": "Operation to perfrom for this package"}
+   ]
+ }

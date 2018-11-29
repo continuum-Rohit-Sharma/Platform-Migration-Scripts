@@ -1,0 +1,9 @@
+{ 
+    "name": "patchingPluginScript",
+    "type":  "resource",
+    "version": "1.0",
+    "attributes": [
+        { "name": "executor", "type": "string", "description": "Interpreter name"},
+        { "name": "body",     "type": "string", "description": "Sequence of instructions"}
+    ]
+}

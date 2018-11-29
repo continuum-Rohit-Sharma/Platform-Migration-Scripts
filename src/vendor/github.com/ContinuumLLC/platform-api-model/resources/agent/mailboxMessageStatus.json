@@ -1,0 +1,7 @@
+{ "name": "mailboxMessageStatus",
+ "type":  "resource",
+ "version": "2.0",
+ "attributes": [
+    { "name": "statusCode", "type": "int", "description": "Processing status of the mailbox message"}
+   ]
+}

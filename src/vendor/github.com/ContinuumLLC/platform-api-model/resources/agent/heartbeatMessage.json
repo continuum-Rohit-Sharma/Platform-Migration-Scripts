@@ -1,0 +1,12 @@
+{ "name": "heartbeatMessage",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "name", "type": "string"},
+    { "name": "type", "type": "string"},
+    { "name": "timestampUTC", "type": "string"},    
+    { "name": "index", "type": "int"},
+    { "name": "messageID", "type": "string"},
+    { "name": "messageURL", "type": "string"}
+    ]
+}

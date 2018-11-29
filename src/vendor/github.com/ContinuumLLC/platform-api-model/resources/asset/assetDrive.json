@@ -1,0 +1,16 @@
+{ "name": "assetDrive",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "product", "type": "string"},
+    { "name": "manufacturer", "type": "string"},
+    { "name": "mediaType", "type": "string"},
+    { "name": "interfaceType", "type": "string"},
+    { "name": "logicalName", "type": "string"},
+    { "name": "serialNumber", "type": "string"},
+    { "name": "partitions", "type": "string[]"},
+    { "name": "sizeBytes", "type": "long"},
+    { "name": "numberOfPartitions", "type": "int"},
+    { "name": "partitionData", "type":"assetDrivePartition[]"} 
+  ]
+}

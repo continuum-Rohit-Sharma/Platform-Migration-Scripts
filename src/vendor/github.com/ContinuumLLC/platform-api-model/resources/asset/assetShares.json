@@ -1,0 +1,13 @@
+{   "name": "share",
+    "type": "resource",
+    "version": "2.0",
+    "attributes": [
+      { "name": "name", "type": "string"},
+      { "name": "caption", "type": "string"},
+      { "name": "description", "type": "string"},
+      { "name": "path", "type": "string"},
+      { "name": "access", "type": "string"},
+      { "name": "userAccess", "type": "string[]"},
+      { "name": "type", "type": "string[]"}
+    ]
+}

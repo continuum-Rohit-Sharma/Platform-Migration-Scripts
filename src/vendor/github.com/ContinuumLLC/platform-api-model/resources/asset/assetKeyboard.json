@@ -1,0 +1,9 @@
+{ "name": "assetKeyboard",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "deviceID", "type": "string"},
+    { "name": "name", "type": "string"},
+    { "name": "description", "type": "string"}
+  ]
+}

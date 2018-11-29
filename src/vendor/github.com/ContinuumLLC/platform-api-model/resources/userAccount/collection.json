@@ -1,0 +1,20 @@
+{ "name": "collection",
+    "type":  "resource",
+    "version": "2.0",
+     "attributes": [
+       { "name": "createTimeUTC", "type": "string"},
+       { "name": "createdBy", "type": "string"},
+       { "name": "name", "type": "string", "description":"Name of resource(userAccount)"},
+       { "name": "type", "type": "string", "description":"Type of userAccount resource (userAccountCollection)"},
+       { "name": "action", "type": "string"},
+       { "name": "topic", "type": "string"},
+       { "name": "endpointID", "type": "string"},
+       { "name": "partnerID", "type": "string"},
+       { "name": "clientID", "type": "string"},
+       { "name": "siteID", "type": "string"},
+       { "name": "regID", "type": "string"},
+       { "name": "actionType", "type": "string"},
+       { "name": "domainRole", "type": "string"},
+       { "name": "users", "type": "info[]"}
+     ]
+   }

@@ -1,0 +1,12 @@
+{ "name": "assetMouse",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "manufacturer", "type": "string"},   
+    { "name": "name", "type": "string"},
+    { "name": "deviceId", "type": "string"},
+    { "name": "deviceInterface", "type": "int","description":"Type of interface used for the pointing device. For ex. PS/2,USB etc."},
+    { "name": "pointingType", "type": "int"},
+    { "name": "buttons", "type": "int","description":"Number of buttons on the pointing device"}
+  ]
+}

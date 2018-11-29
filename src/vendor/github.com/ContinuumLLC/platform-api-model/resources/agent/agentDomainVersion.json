@@ -1,0 +1,12 @@
+{ "name": "agentDomainVersion",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "timestampUTC", "type": "string"},
+    { "name": "name", "type": "string"},
+    { "name": "type", "type": "string"},
+    { "name": "serviceName", "type": "string"},
+    { "name": "serviceVersion", "type": "string"},
+    { "name": "agents", "type": "agent[]"}
+  ]
+}

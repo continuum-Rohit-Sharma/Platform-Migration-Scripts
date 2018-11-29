@@ -1,0 +1,8 @@
+{
+ "name": "Processor Performance Schedule 1",
+ "type":  "schedule",
+ "version": "2.0", 
+ "timestampUTC": "2017-01-11T12:24:53.489110938Z",
+ "path" : "/performance/processor",
+ "message" : "{ \n \"task\": \"/schedule/performance/processor/Processor_1\", \n \"executeNow\": \"false\", \n \"schedule\" : \"30 2 * 0-12 1-5\"}"
+}

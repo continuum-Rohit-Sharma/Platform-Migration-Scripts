@@ -1,0 +1,129 @@
+hash: ec1fc1a1258e15e8f39e179d26b338f6a3c771abd56dab23bcf196b7b4540015
+updated: 2017-07-18T16:13:29.5759013+05:30
+imports:
+- name: github.com/bsm/sarama-cluster
+  version: 6d37f561b2a131e011c0cecf8a4d3c96b1e0a940
+  repo: https://github.com/ContinuumLLC/godep-bsm-sarama-cluster
+- name: github.com/ContinuumLLC/platform-api-model
+  version: a39353ca62d73427d425bc018ee468369a11cff7
+  subpackages:
+  - clients/model/Golang/resourceModel/healthCheck
+  - clients/model/Golang/resourceModel/version
+- name: github.com/davecgh/go-spew
+  version: 346938d642f2ec3594ed81d874461961cd0faa76
+  repo: https://github.com/ContinuumLLC/godep-davecgh-go-spew
+  subpackages:
+  - spew
+- name: github.com/eapache/go-resiliency
+  version: b86b1ec0dd4209a588dc1285cdd471e73525c0b3
+  repo: https://github.com/ContinuumLLC/godep-eapache-go-resiliency
+  subpackages:
+  - breaker
+- name: github.com/eapache/go-xerial-snappy
+  version: bb955e01b9346ac19dc29eb16586c90ded99a98c
+  repo: https://github.com/ContinuumLLC/godep-eapache-go-xerial-snappy
+- name: github.com/eapache/queue
+  version: 44cc805cf13205b55f69e14bcb69867d1ae92f98
+  repo: https://github.com/ContinuumLLC/godep-eapache-queue
+- name: github.com/go-ole/go-ole
+  version: 085abb85892dc1949567b726dff00fa226c60c45
+  subpackages:
+  - oleutil
+- name: github.com/gocql/gocql
+  version: 4d2d1ac71932f7c4a6c7feb0d654462e4116c58b
+  subpackages:
+  - internal/lru
+  - internal/murmur
+  - internal/streams
+- name: github.com/golang/mock
+  version: 61503c535dc549c7ffc1ff07902345658a0f20a2
+  subpackages:
+  - gomock
+- name: github.com/golang/snappy
+  version: 7db9049039a047d955fe8c19b83c8ff5abd765c7
+  repo: https://github.com/ContinuumLLC/godep-golang-snappy
+- name: github.com/google/uuid
+  version: 064e2069ce9c359c118179501254f67d7d37ba24
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: 392c28fe23e1c45ddba891b0320b3b5df220beea
+- name: github.com/hailocab/go-hostpool
+  version: e80d13ce29ede4452c43dea11e79b9bc8a15b478
+- name: github.com/klauspost/crc32
+  version: cb6bfca970f6908083f26f39a79009d608efd5cd
+  repo: https://github.com/ContinuumLLC/godep-klauspost-crc32
+- name: github.com/pierrec/lz4
+  version: 5c9560bfa9ace2bf86080bf40d46b34ae44604df
+  repo: https://github.com/ContinuumLLC/godep-pierrec-lz4
+- name: github.com/pierrec/xxHash
+  version: 5a004441f897722c627870a981d02b29924215fa
+  repo: https://github.com/ContinuumLLC/godep-pierrec-xxHash
+  subpackages:
+  - xxHash32
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
+- name: github.com/rcrowley/go-metrics
+  version: 1f30fe9094a513ce4c700b9a54458bbb0c96996c
+  repo: https://github.com/ContinuumLLC/godep-rcrowley-go-metrics
+- name: github.com/satori/go.uuid
+  version: 879c5887cd475cd7864858769793b2ceb0d44feb
+- name: github.com/Shopify/sarama
+  version: 94895118af045d13c7e576477276a53afccdd6b1
+  repo: https://github.com/ContinuumLLC/godep-shopify-sarama
+- name: github.com/StackExchange/wmi
+  version: ea383cf3ba6ec950874b8486cd72356d007c768f
+- name: github.com/Microsoft/go-winio
+  version: c4dc1301f1dc0307acd38e611aa375a64dfe0642
+- name: github.com/samuel/go-zookeeper
+  version: 9a96098268ef555eb1f04d8b1ee813d0a87e5089
+- name: golang.org/x/net
+  version: 944c58e9d57bcecf171fd4bea155269aa8a96805
+  subpackages:
+  - http2
+  - context
+  - http2/hpack
+  - idna
+  - lex/httplex
+- name: gopkg.in/inf.v0
+  version: 3887ee99ecf07df5b447e9b00d9c0b2adaa9f3e4
+- name: github.com/ContinuumLLC/platform-api-model
+  version: b1f30016bfaa0075785211a6a261a1f671e7eb67
+  subpackages:
+  - clients/model/Golang/resourceModel/entitlement
+- name: github.com/coocood/freecache
+  version: a47e26eb67ac2657e4b5a62b1975bb2b65e0b8b3
+- name: gopkg.in/jarcoal/httpmock.v1
+  version: cf52904a3cf0f78f199ecade6a6df8e245d5b25a
+- name: github.com/spaolacci/murmur3
+  version: f09979ecbc725b9e6d41a297405f65e7e8804acc
+- name: golang.org/x/sys
+  version: 8b4580aae2a0dd0c231a45d3ccb8434ff533b840
+  subpackages:
+  - windows
+  - unix
+- name: github.com/jinzhu/gorm
+  version: 5174cc5c242a728b435ea2be8a2f7f998e15429b
+  subpackages:
+  - dialects/sqlite
+- name: github.com/jinzhu/inflection
+  version: 74387dc39a75e970e7a3ae6a3386b5bd2e5c5cff
+- name: github.com/mattn/go-sqlite3
+  version: 2d44decb4941c9cdf72c22297b7890faf7da9bcb
+- name: github.com/stretchr/testify
+  version: f35b8ab0b5a2cef36673838d662e249dd9c94686
+- name: github.com/prometheus/client_golang
+  version: 1cafe34db7fdec6022e17e00e1c1ea501022f3e4
+- name: github.com/beorn7/perks
+  version: 3a771d992973f24aa725d07868b467d1ddfceafb
+- name: github.com/golang/protobuf
+  version: aa810b61a9c79d51363740d207bb46cf8e620ed5
+- name: github.com/prometheus/client_model
+  version: 5c3871d89910bfb32f5fcab2aa4b9ec68e65a99f
+- name: github.com/prometheus/common
+  version: 7e9e6cabbd393fc208072eedef99188d0ce788b6
+- name: github.com/prometheus/procfs
+  version: 185b4288413d2a0dd0806f78c90dde719829e5ae
+- name: github.com/matttproud/golang_protobuf_extensions
+  version: c12348ce28de40eed0136aa2b644d0ee0650e56c
+-testImports: []

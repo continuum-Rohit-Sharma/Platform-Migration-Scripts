@@ -1,0 +1,38 @@
+{
+    "originDomain": "asset",
+    "id": "171cb160-7ffc-4728-ae71-e94538722d34",
+    "client": "9eda6e7b-0e68-4471-99a5-4f93ba539c91",
+    "partner": "81801b5f-f04f-41e0-9a14-daf6ee81fd01",
+    "site": "6ed346a7-793d-4b1b-a0f9-cea23a237ca8",
+    "asset": {
+        "os": "Windows XP",
+        "service_pack": "SP3",
+        "version": "",
+        "baseboard_manufacturer": "AMAX Information Technologies",
+        "virtual_machine": false,
+        "installed_software": [
+            {
+                "name": "Safari",
+                "version": "10.0.1 (11602.2.14.0.7)",
+                "publisher": "Apple",
+                "installation_date": "2017-01-11T12:34:53.489110938Z"
+            },
+            {
+                "name": "Vim",
+                "version": "8.0 (124)",
+                "publisher": "Vim Foundation",
+                "installation_date": "2017-02-12T12:42:00.370110973Z"
+            }
+        ],
+        "processor_type": "Intel Celeron",
+        "endpoint_type": "desktop",
+        "ram": 17179869184,
+        "machine_name": "JUNO-WIN7-32",
+        "machine_friendly_name": "purple_dusty_grandpa_128736",
+        "v_pro": false,
+        "location": "rooftop",
+        "ipv4_list": [
+            "10.0.2.15"
+        ]
+    }
+}

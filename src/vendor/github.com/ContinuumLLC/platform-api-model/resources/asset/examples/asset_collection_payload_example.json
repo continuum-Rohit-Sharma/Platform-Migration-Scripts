@@ -1,0 +1,298 @@
+{
+  "createTimeUTC": "2017-02-05T19:15:53.489110939Z",
+  "createdBy": "/continuum/agent/plugin/asset",
+  "name": "asset",
+  "type": "assetCollection",
+  "endpointID": "",
+  "partnerID": "",
+  "clientID": "",
+  "siteID": "",
+  "regID": "",
+  "friendlyName": "KK-VirtualBox",
+  "remoteAddress": "172.34.35.36",
+  "resourceType": "Desktop",
+  "baseBoard": {
+    "product": "VirtualBox",
+    "manufacturer": "Oracle Corporation",
+    "model": "TODO",
+    "serialNumber": "0",
+    "version": "1.2",
+    "name": "TODO",
+    "installDate": "2016-02-05T19:15:53.489110939Z"
+  },
+  "bios": {
+    "product": "TODO",
+    "manufacturer": "innotek GmbH",
+    "version": "VirtualBox",
+    "serialNumber": "TODO",
+    "smbiosVersion": "2.5"
+  },
+  "drives": [{
+    "product": "ATA Disk",
+    "manufacturer": "ATA",
+    "mediaType": "VBOX HARDDISK",
+    "interfaceType": "SCSI",
+    "logicalName": "/dev/sda",
+    "serialNumber": "VB1a444d87-1f5ba7ee",
+    "partitions": [
+      "/dev/sda1",
+      "/dev/sda2",
+      "/dev/sda5"
+    ],
+    "sizeBytes": 42949672960,
+    "numberOfPartitions": 3,
+    "partitionData": [{
+        "name": "C:",
+        "label": "ProgramData",
+        "fileSystem": "NTFS",
+        "description": "Local Fixed Disk",
+        "sizeBytes": 5414440
+      },
+      {
+        "name": "D:",
+        "label": "TestData",
+        "fileSystem": "NTFS",
+        "description": "Local Fixed Disk",
+        "sizeBytes": 1012220
+      },
+      {
+        "name": "E:",
+        "label": "Backup",
+        "fileSystem": "FAT32",
+        "description": "Local Fixed Disk",
+        "sizeBytes": 4012220
+      }
+    ]
+  }],
+  "physicalMemory": [{
+    "manufacturer": "Samsung",
+    "serialNumber": "348AE941",
+    "sizeBytes": 8589934592
+  }],
+  "networks": [{
+    "vendor": "Intel Corporation",
+    "product": "82540EM Gigabit Ethernet Controller",
+    "dhcpEnabled": true,
+    "dhcpServer": "10.0.2.2",
+    "dhcpLeaseObtained": "2016-02-05T19:15:53.489110939Z",
+    "dhcpLeaseExpires": "2016-02-06T19:15:53.489110939Z",
+    "dnsServers": [
+      "10.2.17.25",
+      "10.2.17.25",
+      "10.2.17.6",
+      "8.8.8.8",
+      "8.8.4.4",
+      "8.8.8.8",
+      "8.8.4.4"
+    ],
+    "ipEnabled": true,
+    "ipv4": "10.0.2.15",
+    "ipv4List": [
+      "10.0.2.15",
+      "198.168.17.26"
+    ],
+    "ipv6": "fe80::a00:27ff:fe78:e3b3",
+    "ipv6List": [
+      "fe80::a00:27ff:fe78:e3b3",
+      "ae80::b00:27ff:fe78:e3b4"
+    ],
+    "subnetMask": "255.255.255.0",
+    "subnetMasks": [
+      "255.255.255.0",
+      "255.255.254.0"
+    ],
+    "defaultIPGateway": "10.0.2.2",
+    "defaultIPGateways": [
+      "10.0.2.2",
+      "10.0.2.3"
+    ],
+    "macAddress": "08:00:27:78:e3:b3",
+    "winsPrimaryServer": "110.0.2.2",
+    "winsSecondaryServer": "110.0.2.3",
+    "logicalName": "eth0"
+  }],
+  "os": {
+    "product": "Ubuntu 14.04.5 LTS",
+    "manufacturer": "Ubuntu",
+    "osLanguage": "en_IN",
+    "serialNumber": "TODO",
+    "version": "14.04",
+    "installDate": "2016-02-05T19:15:53.489110939Z",
+    "type": "linux",
+    "arch": "64-bit",
+    "servicePack": "Service Pack 1",
+    "productID": "12567-67890-09875-NWERY",
+    "productKey": "GHC12-678WS-6789Y-OP123"
+  },
+  "processors": [{
+    "product": "Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz",
+    "numberOfCores": 1,
+    "clockSpeedMhz": 2608.602,
+    "family": 6,
+    "manufacturer": "GenuineIntel",
+    "processorType": "x86_64",
+    "serialNumber": "TODO",
+    "level": 6
+  }],
+  "raidController": {
+    "softwareRaid": "TODO",
+    "hardwareRaid": "TODO",
+    "vendor": "TODO"
+  },
+  "system": {
+    "product": "VirtualBox",
+    "model": "TODO",
+    "timeZone": "+0530",
+    "timeZoneDescription": "IST",
+    "serialNumber": "0",
+    "systemName": "KK-VirtualBox",
+    "category": "TODO",
+    "domain": "corp.continuum.net",
+    "domainRole": 1
+  },
+  "installedSoftwares": [{
+    "name": "Oracle VM VirtualBox",
+    "publisher": "Oracle Corp.",
+    "version": "5.1.22",
+    "installDate": "2017-05-26T12:34:53.489110938Z",
+    "userName": "Administrator",
+    "lastAccessDateTime": "2017-05-26T12:34:53.489110938Z"
+  }],
+  "keyboards": [{
+      "deviceID": "USB\\VID_046D&PID_C31C&MI_00\\6&259BDE39&0&0000",
+      "name": "Enhanced (101- or 102-key)",
+      "description": "USB Input Device"
+    },
+    {
+      "deviceID": "ACPI\\HPQ8002\\4&13A6CFB9&0",
+      "name": "Enhanced (101- or 102-key)",
+      "description": "Standard PS/2 Keyboard"
+    }
+  ],
+  "mouse": [{
+    "manufacturer": "Microsoft",
+    "name": "PS/2 Compatible Mouse",
+    "deviceId": "ABC012XYZ34",
+    "deviceInterface": 4,
+    "pointingType": 2,
+    "buttons": 0
+  }],
+  "monitors": [{
+    "name": "Generic PnP Monitor",
+    "deviceId": "DesktopMonitor1",
+    "manufacturer": "(Standard monitor types)",
+    "screenHeight": 1366,
+    "screenWidth": 768
+  }],
+  "physicalDrives": [{
+      "type": "RemovableDrive",
+      "partitionData": [{
+        "name": "F:",
+        "label": "USB",
+        "fileSystem": "NTFS",
+        "description": "Removable Disk",
+        "sizeBytes": 419184640
+      }]
+    },
+    {
+      "type": "NetworkDrive",
+      "partitionData": [{
+        "name": "G:",
+        "label": "File Storage",
+        "fileSystem": "NTFS",
+        "description": "Network Connection",
+        "sizeBytes": 1099375308800
+      }]
+    },
+    {
+      "type": "CDDrive",
+      "partitionData": [{
+        "name": "H:",
+        "label": "",
+        "fileSystem": "",
+        "description": "CD-ROM Disc",
+        "sizeBytes": 0
+      }]
+    },
+    {
+      "type": "RAMDisk",
+      "partitionData": [{
+        "name": "Z:",
+        "label": "RAM",
+        "fileSystem": "FAT32",
+        "description": "RAM Disk",
+        "sizeBytes": 329184000
+      }]
+    }
+  ],
+  "users": [{
+      "userid": "S-1-5-21-1958057136-1394578505-252747866-1998",
+      "username": "ABC",
+      "domainName": "CORP",
+      "userType": "",
+      "accountType": "Domain",
+      "userDisabled": false,
+      "userLockout": false,
+      "passwordRequired": true,
+      "passwordChangeable": true,
+      "passwordExpires": true,
+      "passwordComplexityEnabled": true,
+      "remoteDesktopAllowed": true,
+      "lockoutThreshold": 5,
+      "lockoutDurationMins": 30,
+      "lastLogonTimestamp": 1528459079,
+      "remoteAccessAllowed": true,
+      "systemRole": "PrimaryDomainController"
+    },
+    {
+      "userid": "S-1-4-22-1958057136-1394578505-252747866-1997",
+      "username": "XYZ",
+      "domainName": "CORP",
+      "userType": "",
+      "accountType": "Local",
+      "userDisabled": true,
+      "userLockout": false,
+      "passwordRequired": true,
+      "passwordChangeable": true,
+      "passwordExpires": true,
+      "passwordComplexityEnabled": true,
+      "remoteDesktopAllowed": false,
+      "lockoutThreshold": 5,
+      "lockoutDurationMins": 0,
+      "lastLogonTimestamp": 1528459079,
+      "remoteAccessAllowed": false,
+      "systemRole": "StandaloneWorkstation"
+    }
+  ],
+  "services": [{
+    "serviceName": "Dhcp",
+    "displayName": "DHCP client",
+    "executablePath": "",
+    "startupType": "Automatic",
+    "serviceStatus": "Started",
+    "logOnAs": "Local Service",
+    "stopEnableAction": true,
+    "delayedAutoStart": true,
+    "win32ExitCode": 0,
+    "serviceSpecificExitCode": 0
+  }],
+  "shares": [{
+    "name": "",
+    "caption": "",
+    "description": "",
+    "path": "",
+    "access": "",
+    "userAccess": [
+      "domain/user"
+    ],
+    "type": [
+      "Disk drive",
+      "Temporary share"
+    ]
+  }],
+  "softwareLicenses": [{
+    "productName": "Internet Explorer",
+    "productID": "12345-67890-09875-NWERY",
+    "productKey": "ABC12-678WS-6789Y-OP123"
+  }]
+}

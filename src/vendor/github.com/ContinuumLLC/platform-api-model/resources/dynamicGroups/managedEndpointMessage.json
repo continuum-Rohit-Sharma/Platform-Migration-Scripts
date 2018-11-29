@@ -1,0 +1,125 @@
+{
+    "name": "managedEndpointMessage",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+        {
+            "name": "originDomain",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "name": "client",
+            "type": "string"
+        },
+        {
+            "name": "partner",
+            "type": "string"
+        },
+        {
+            "name": "site",
+            "type": "string"
+        }
+    ],
+    "domains": [
+        {
+            "name": "asset",
+            "attributes": [
+                {
+                    "name": "os",
+                    "type": "string"
+                },
+                {
+                    "name": "service_pack",
+                    "type": "string"
+                },
+                {
+                    "name": "version",
+                    "type": "string"
+                },
+                {
+                    "name": "baseboard_manufacturer",
+                    "type": "string"
+                },
+                {
+                    "name": "virtual_machine",
+                    "type": "boolean"
+                },
+                {
+                    "name": "v_pro",
+                    "type": "boolean"
+                },
+                {
+                    "name": "installed_software",
+                    "type": "installedSoftwareMessage[]"
+                },
+                {
+                    "name": "processor_type",
+                    "type": "string"
+                },
+                {
+                    "name": "endpoint_type",
+                    "type": "string"
+                },
+                {
+                    "name": "ram",
+                    "type": "integer"
+                },
+                {
+                    "name": "machine_name",
+                    "type": "string"
+                },
+                {
+                    "name": "machine_friendly_name",
+                    "type": "string"
+                },
+                {
+                    "name": "location",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "patch",
+            "attributes": [
+                {
+                    "name": "missing_patches",
+                    "type": "boolean"
+                },
+                {
+                    "name": "list_of_missing_patches",
+                    "type": "string[]"
+                },
+                {
+                    "name": "last_patch_update",
+                    "type": "timestamp"
+                }
+            ]
+        },
+        {
+            "name": "performance",
+            "attributes": [
+                {
+                    "name": "available_disk_space",
+                    "type": "integer"
+                },
+                {
+                    "name": "cpu",
+                    "type": "integer"
+                }
+            ]
+        },
+        {
+            "name": "network_monitor",
+            "attributes": [
+                {
+                    "name": "wake_on_lan",
+                    "type": "boolean"
+                }
+            ]
+        }
+    ]
+}

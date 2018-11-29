@@ -1,0 +1,14 @@
+{ "name": "schedule",
+ "type":  "operation",
+ "version": "2.0",
+  "attributes": [
+    { "name": "name", "type": "string" , "description": "Name of this schedule"},
+    { "name": "type", "type": "string", "description": "Type is schedule unless newer types of specific schedules are introduced"},
+    { "name": "version", "type": "string", "description": "The request structure API version"},
+    { "name": "timestampUTC", "type": "string", "description": "UTC time when the request originated"},
+    { "name": "task", "type": "string", "description": "Full path of the task to be executed, including context"},
+    { "name": "taskInput", "type": "string", "description": "Is optional, some tasks may require additional JSON input"},
+    { "name": "executeNow", "type": "string", "description": "If this task is to be executed immediately"},
+    { "name": "schedule", "type": "string", "description": "Schedule in Cron tab format,see http://crontab.org/ for details "}
+  ]
+}

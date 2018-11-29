@@ -1,0 +1,8 @@
+{
+ "name": "Uninstall-Juno",
+ "type":  "app",
+ "version": "2.0", 
+ "timestampUTC": "2017-01-11T12:24:53.489110938Z",
+ "path" : "",
+ "message":"{\"action\": \"uninstall\", \"packageName\": \"platform-agent-core.exe\"}"
+}

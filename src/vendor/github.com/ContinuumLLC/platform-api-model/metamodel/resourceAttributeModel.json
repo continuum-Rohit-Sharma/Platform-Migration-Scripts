@@ -1,0 +1,8 @@
+{ "name": "resourceAttributeModel",
+ "type":  "metamodel",
+ "version": "2.0",
+  "attributes": [
+    { "name": "name", "type": "string", "description": "Name of the attribute"},
+    { "name": "type", "type": "string", "value": "datatype of the attribute"}
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "dynamicGroupDefinitions",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+        {
+            "name": "dynamicGroups",
+            "type": "dynamicGroupDefinition[]"
+        }
+    ]
+}

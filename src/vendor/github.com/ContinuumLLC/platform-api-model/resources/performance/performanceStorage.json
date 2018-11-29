@@ -1,0 +1,13 @@
+{ "name": "performanceStorage",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "createTimeUTC", "type": "string"},
+    { "name": "createdBy", "type": "string"},
+    { "name": "name", "type": "string"},
+    { "name": "type", "type": "string"},
+    { "name": "index", "type": "int"},
+    { "name": "metric", "type": "performanceStorageMetric"},
+    { "name": "partitions", "type": "performanceStoragePartition[]"}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+    "timeStampUTC": "2017-01-05T11:24:53.489110939Z",
+    "type": "version",
+    "name": "performanceSolutionVersion",
+    "serviceName": "Performance Microservice",
+    "serviceProvider": "Continuum LLC",
+    "serviceVersion": "v2.0",
+    "buildNumber": "22",
+    "networkInterfaces": ["10.1.20.123:8081", "10.1.20.123:8082"],
+    "status": "Running",
+    "startTime": "2017-01-05T11:24:53.489110939+5:30",
+    "cpuPercentage": "5.2",
+    "numOfOSThreads": "2",
+    "currentMemoryMB": "10.3"
+}

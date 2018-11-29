@@ -1,0 +1,9 @@
+{
+    "timeStampUTC": "2017-01-05T11:24:53.489110939Z",
+    "type": "version",
+    "name": "performanceSolutionVersion",
+    "serviceName": "Performance Microservice",
+    "serviceProvider": "Continuum LLC",
+    "serviceVersion": "v2.0",
+    "buildNumber": "22"
+}

@@ -1,0 +1,32 @@
+hash: 29fa3c222ceef301662fed8d016c04a2b2b870c29c80d4a08e84b3daacd9983a
+updated: 2018-11-29T11:23:22.548196149+05:30
+imports:
+- name: github.com/ContinuumLLC/platform-api-model
+  version: 51d103d98a0419fc56c1b8398563ed48ac75ba01
+  subpackages:
+  - clients/model/Golang/resourceModel/asset
+- name: github.com/ContinuumLLC/platform-common-lib
+  version: 3b5d25fc1ee72ba42be92628b3252e110bff204d
+  subpackages:
+  - src/exception
+  - src/plugin/protocol
+  - src/utils
+- name: github.com/gocql/gocql
+  version: 56a164ee9f3135e9cfe725a6d25939f24cb2d044
+  subpackages:
+  - internal/lru
+  - internal/murmur
+  - internal/streams
+- name: github.com/golang/snappy
+  version: 2e65f85255dbc3072edf28d6b5b8efc472979f5a
+- name: github.com/hailocab/go-hostpool
+  version: e80d13ce29ede4452c43dea11e79b9bc8a15b478
+- name: github.com/mohae/deepcopy
+  version: c48cc78d482608239f6c4c92a4abd87eb8761c90
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
+- name: github.com/xuri/excelize
+  version: 724ed5f9f3835c317ca9b8b52c30d3cea8754a5b
+- name: gopkg.in/inf.v0
+  version: 3887ee99ecf07df5b447e9b00d9c0b2adaa9f3e4
+testImports: []

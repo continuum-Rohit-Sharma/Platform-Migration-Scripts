@@ -1,0 +1,23 @@
+{
+    "requestId": "db84c87c-568e-4442-a45d-934674660b85",
+    "manifestId": "db84c87c-568e-4442-a45d-934674660b85",
+    "messageId": "db84c87c-568e-4442-a45d-934674660b85",
+    "packageId": "db84c87c-568e-4442-a45d-934674660b85",
+    "action": "update",
+    "packageName": "platform-agent-core",
+    "packageType": "Core",
+    "packageDescription": "Base Agent Core bunary",
+    "packageVersion": "1.0.0.382",
+    "operatingSystemName": "Vista",
+    "operatingSystemType": "windows",
+    "operatingSystemVersion": "6.4",
+    "status": "Sucess",
+    "timestampUTC": "2017-01-11T12:24:53.489110938Z",
+    "operation" : "install",
+    "installationVariables": [
+        {
+            "name": "endpointId",
+            "value": "es84c234-568e-4442-a45d-934674660b85"
+        }
+    ]
+}

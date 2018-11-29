@@ -1,0 +1,16 @@
+{ "name": "windowsService",
+  "type": "resource",
+  "version": "2.0",
+  "attributes": [
+    { "name": "serviceName", "type": "string"},
+    { "name": "displayName", "type": "string"},
+    { "name": "executablePath", "type": "string"},
+    { "name": "startupType", "type": "string"},
+    { "name": "serviceStatus", "type": "string"},
+    { "name": "logOnAs", "type": "string"},
+    { "name": "stopEnableAction", "type": "boolean"},
+    { "name": "delayedAutoStart", "type": "boolean"},
+    { "name": "win32ExitCode", "type": "int"},
+    { "name": "serviceSpecificExitCode", "type": "int"}
+  ]
+}

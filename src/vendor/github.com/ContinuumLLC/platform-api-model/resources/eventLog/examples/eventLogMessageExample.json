@@ -1,0 +1,10 @@
+{
+  "hostname": "Desktop1",
+  "source": "SecurityCenter",
+  "facility": 17,
+  "severity": 2,
+  "eventID": 1,
+  "message": "Some message",
+  "createdAt": "2017-01-07T12:21:53.489110939Z",
+  "duplications": 0
+}

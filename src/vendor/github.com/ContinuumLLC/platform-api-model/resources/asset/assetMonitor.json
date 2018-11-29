@@ -1,0 +1,12 @@
+{ "name": "assetMonitor",
+    "type":  "resource",
+    "version": "2.0",
+     "attributes": [
+       { "name": "name", "type": "string"},
+       { "name": "deviceID", "type": "string"},
+       { "name": "manufacturer", "type": "string"},
+       { "name": "screenHeight", "type": "int"},
+       { "name": "screenWidth", "type": "int"}
+     ]
+   }
+   

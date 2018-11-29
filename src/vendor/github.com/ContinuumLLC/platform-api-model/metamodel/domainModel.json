@@ -1,0 +1,11 @@
+{ "name": "domainModel",
+ "type":  "metamodel",
+ "version": "2.0",
+  "attributes": [
+    { "name": "name", "type": "string", "description": "Name of the solution vertical"},
+    { "name": "type", "type": "string", "value": "domain"},
+    { "name": "version", "type": "string", "description": "API version to support this domain model"},
+    { "name": "appplicableEntities", "type": "applicableEntity[]", "description": "Resource types for which these domain host APIs on"}, 
+   { "name": "operations", "type": "operation[]", "description": "Details of operations, REST and/or plugin"}
+    ]
+}

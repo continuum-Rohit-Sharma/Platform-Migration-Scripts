@@ -1,0 +1,12 @@
+{
+  "originDomain": "patch",
+  "id": "171cb160-7ffc-4728-ae71-e94538722d34",
+  "client": "9eda6e7b-0e68-4471-99a5-4f93ba539c91",
+  "partner": "81801b5f-f04f-41e0-9a14-daf6ee81fd01",
+  "site": "6ed346a7-793d-4b1b-a0f9-cea23a237ca8",
+  "patch": {
+    "missing_patches": false,
+    "list_of_missing_patches": [],
+    "last_patch_update": "2017-02-12T12:42:00.370110973Z"
+  }
+}

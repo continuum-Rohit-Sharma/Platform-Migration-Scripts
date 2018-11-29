@@ -1,0 +1,12 @@
+{
+  "name": "globalManifest",
+  "type":  "resource",
+  "version": "2.0",
+   "attributes": [
+     { "name": "productVersion", "type": "string", "description": "ITS-Platform Product (Marketing) Version"},
+     { "name": "version", "type": "string", "description": "Manifest Version"},
+     { "name": "supportedOS", "type": "operatingSystem[]", "description": "List of Operating System Supported by the Packages available in this file"},
+     { "name": "supportedArch", "type": "string[]", "description": "List of Supported Architecture for this Package (e.g. i386 / Darwin etc.)"},
+     { "name": "packages", "type": "package[]", "description": "List of Packages available for this resource/endpoint"}
+   ]
+ }

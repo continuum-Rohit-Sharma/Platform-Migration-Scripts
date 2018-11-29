@@ -1,0 +1,27 @@
+{
+    "name": "EntitlementMessage",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "name": "action",
+        "type": "string"
+      },
+      {
+        "name": "entitlements",
+        "type": "entitlementDefinition[]"
+      }
+    ]
+  }

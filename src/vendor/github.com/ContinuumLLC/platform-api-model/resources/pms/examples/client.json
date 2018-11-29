@@ -1,0 +1,27 @@
+{  
+    "ResType":103,
+    "ResDescription":"Client response for cdc",
+    "Data":{
+       "ClientID":1,  
+       "CallerGreeting":"CMSPL DEV Help Desk",
+       "ClientMainPhoneNo":"3432134242",
+       "CreationDt":"2010-05-30T06:52:00Z",
+       "DisabledON":"2017-10-28T22:19:38.227Z",
+       "IsEnabled":true,
+       "MemberId":1,
+       "Proxy":false,
+       "SiteAddress":"MUMBAI",
+       "SiteAddress2":"andheri",
+       "SiteCity":"mumbai",
+       "SiteCountry":229,
+       "SiteName":"XYZ",
+       "SitePostalCode":"890",
+       "SiteState":"mS-d",
+       "Sitecode":"stobaprazisionstechnikuk",
+       "Status":1,
+       "TimeStamp":"2018-10-28T22:19:38.227Z",
+       "TimeZone":"EST",
+       "Usr_Name":"test user",
+       "Operation":2
+    }
+ }

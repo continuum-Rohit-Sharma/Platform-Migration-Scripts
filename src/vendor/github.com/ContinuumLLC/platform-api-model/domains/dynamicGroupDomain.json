@@ -1,0 +1,44 @@
+{
+    "name": "dynamicGroupDomain",
+    "type": "domain",
+    "version": "2.0",
+    "applicableEntities": [
+        {
+            "name": "errorMessage",
+            "type":"resource",
+            "version": "2.0"
+        },
+        {
+            "name": "endpointID",
+            "type":"resource",
+            "version": "2.0"
+        }
+    ],
+    "operations": [
+        {
+            "name": "getDynamicGroups",
+            "restpath": "GET $ROOT/v1/$partnerUUID/dynamic-groups",
+            "returntype": "dynamicGroupDefinitions"
+        },
+        {
+            "name": "getDynamicGroup",
+            "restpath": "GET $ROOT/v1/$partnerUUID/dynamic-groups/$dynamicGroupID",
+            "returntype": "dynamicGroupDefinition"
+        },
+        {
+            "name": "crateDynamicGroup",
+            "restpath": "POST $ROOT/v1/$partnerUUID/dynamic-groups",
+            "returntype": "dynamicGroupOperationStatusMessage"
+        },
+        {
+            "name": "updateDynamicGroup",
+            "restpath": "PUT $ROOT/v1/$partnerUUID/dynamic-groups/$dynamicGroupID",
+            "returntype": "dynamicGroupDefinition"
+        },
+        {
+            "name": "deleteDynamicGroup",
+            "restpath": "DELETE $ROOT/v1/$partnerUUID/dynamic-groups/$dynamicGroupID",
+            "returntype": "dynamicGroupOperationStatusMessage"
+        }
+    ]
+}

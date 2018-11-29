@@ -1,0 +1,15 @@
+{ 
+    "name": "webhookScheduleTask",
+    "type":  "resource",
+    "version": "2.0",
+     "attributes": [
+       { "name": "subType", "type": "string" , "description": "Sub type of schedule message.Example value as RTS"},
+       { "name": "action", "type": "string", "description": "Action that  schedule message need to perform.Example : ADD,DELETE etc"},
+       { "name": "webhook", "type": "string", "description": "Webhook to send data i.e. REST api URL."},
+       { "name": "scheduleTimeoutInSeconds", "type": "int", "description": "Timeout in seconds for webhook schedule task."}
+       { "name": "dataCompressionType", "type": "string", "description": "Standard compression type like gzip,deflate"}
+	 ]
+   }
+   
+
+   

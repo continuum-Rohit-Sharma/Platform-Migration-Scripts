@@ -1,0 +1,9 @@
+{
+  "name": "installationVariable",
+  "type":  "resource",
+  "version": "2.0",
+   "attributes": [
+     { "name": "name", "type": "string", "description": "Installation valiable name"},
+     { "name": "value", "type": "string", "description": "Installation variable value"}
+   ]
+ }

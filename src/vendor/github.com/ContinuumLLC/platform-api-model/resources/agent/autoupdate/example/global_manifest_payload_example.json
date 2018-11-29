@@ -1,0 +1,40 @@
+{
+    "productVersion" : "1.0.383",
+    "version": "1.0.383.50",
+    "supportedOS": [
+        {
+            "type": "Windows",
+            "version": "6.1",
+            "name": "XP"
+        },
+        {
+            "type": "Windows",
+            "version": "6.4",
+            "name": "Vista"
+        }
+    ],
+    "supportedArch": ["i386"],
+    "packages": [
+        {
+            "name": "Agent Core",
+            "type": "Core",
+            "version": "99",
+            "source": "http://agent.service.ITSPlatform.com/agent/10160/windows/platform_agent_core.zip",
+            "operation":"install"
+        },
+        {
+            "name": "Performance Plugin",
+            "type": "SRP",
+            "version": "55",
+            "source": "http://agent.service.ITSPlatform.com/agent/10160/windows/platform_performance_plugin.zip",
+            "operation":"uninstall"
+        },
+        {
+            "name": "Asset Plugin",
+            "type": "SRP",
+            "version": "102",
+            "source": "http://agent.service.ITSPlatform.com/agent/10160/windows/platform_asset_plugin.zip",
+            "operation":"install"
+        }
+    ]
+}

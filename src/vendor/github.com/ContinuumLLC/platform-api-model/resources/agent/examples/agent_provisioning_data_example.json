@@ -1,0 +1,27 @@
+{
+    "endpointID": "etee90e6-bf7e-4f50-b465-66564ddwermt",
+    "agentID": "etee90e6-bf7e-4f50-b465-qw3exrts",
+    "partnerID": "123",
+    "siteID": "ABC",
+    "clientID": "PQR",
+    "legacyRegID": "9845",
+    "sysInfo": {
+        "timestampUTC": "0001-01-01T00:00:00Z",
+        "osType": "windows",
+        "osName": "Microsoft Windows 7 Professional",
+        "osSerialNumber": "09203-891-5001202-52183",
+        "osVersion": "6.1",
+        "hostName": "RMM-LT-785",
+        "macAddress": "08:00:25:21:45:e3",
+        "processorID": "09203-891",
+        "processorType": "x84",
+        "hardDriveSerialNumber": "09203-891",
+        "memory": "16GiG",
+        "motherboardAdapter": "09203-891",
+        "cdromSerial": "09203-891",
+        "biosSerial": "09203-891",
+        "logicalDiskVolumeSerialNumber": "E0381A281",
+        "virtualMachineIdentity": "00-11-22-33-44-55-66-77-88-99-aa-bb-cc-dd-ee-ff",
+        "systemManufacturerReference": ""
+    }
+}

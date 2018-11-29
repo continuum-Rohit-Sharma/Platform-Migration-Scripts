@@ -1,0 +1,39 @@
+{
+    "name": "EntitlementMessage",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp"
+      },
+      {
+        "name": "createdBy",
+        "type": "string"
+      },
+      {
+        "name": "updatedBy",
+        "type": "string"
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp"
+      },
+      {
+        "name": "entitlements",
+        "type": "entitlementDefinition[]"
+      }
+    ]
+  }

@@ -1,0 +1,14 @@
+{
+    "name":"resource",
+    "type":"resource",
+    "version":"2.0",
+    "attributes":[
+        { "name": "id", "type": "string"},
+        { "name": "name", "type": "string"},
+        { "name": "type", "type": "string"},
+        { "name": "service", "type": "string"},
+        { "name": "location", "type": "string"},
+        { "name": "status", "type": "string"},
+        { "name": "hierarchies", "type": "array", "value":"resourcehierarchy"}
+    ]
+}

@@ -1,0 +1,12 @@
+{"name": "heartbeatMailbox",
+"type": "resource",
+"version": "2.0",
+"attributes": [
+    { "name": "name", 			  "type": "string"},
+    { "name": "type", 			  "type": "string"},
+    { "name": "version", 		  "type": "string"},
+    { "name": "timestampUTC", "type": "string"},
+    { "name": "message", "type":"heartbeatMessage[]"} 
+    ]
+  }	
+ 

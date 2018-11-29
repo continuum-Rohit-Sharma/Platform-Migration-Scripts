@@ -1,0 +1,59 @@
+{ "name": "performanceDomain",
+ "type":  "domain",
+ "version": "2.0",
+  "applicableEntities": [
+    { "name": "performanceProcessors", "type": "resource", "version": "2.0"},
+    { "name": "performanceProcessors", "type": "resource", "version": "1.0"},
+    { "name": "performanceProcess", "type": "resource", "version": "2.0"},
+    { "name": "performanceApplication", "type": "resource", "version": "2.0"},
+    { "name": "performanceNetwork", "type": "resource", "version": "2.0"},
+    { "name": "performanceMemory", "type": "resource", "version": "2.0"},
+    { "name": "performanceStorage", "type": "resource", "version": "2.0"},
+    { "name": "performanceMonitor", "type": "operation", "version": "1.0"}
+    ],
+"operations": [
+    { "name": "getAllProcessorPerformances",
+      "restpath":  "GET $ROOT/performance/$version/partner/$partnerID/endpoint/$endpointID/processor",
+      "scope": "public",
+      "pluginpath": "/performance/processor",
+      "returntype": "performanceProcessors"
+      },
+    { "name": "getProcessorPerformance",
+      "restpath": "GET $ROOT/performance/$version/partner/$partnerID/endpoint/$endpointID/processor/$processor.index",
+      "scope": "public",
+      "pluginpath": "/performance/processor/$processor.index",	
+      "returntype": "performanceProcessors"
+      },
+    { "name": "getMemoryPerformance",
+      "restpath":  "GET $ROOT/performance/$version/partner/$partnerID/endpoint/$endpointID/memory",
+      "pluginpath": "/performance/memory",
+      "returntype": "performanceMemory"
+      },
+      { "name": "getStoragePerformance",
+      "restpath":  "GET $ROOT/performance/$version/partner/$partnerID/endpoint/$endpointID/storage",
+      "pluginpath": "/performance/storage",
+      "returntype": "performanceStorages"
+      },
+      { "name": "getNetworkPerformance",
+      "restpath":  "GET $ROOT/performance/$version/partner/$partnerID/endpoint/$endpointID/network",
+      "pluginpath": "/performance/network",
+      "returntype": "performanceNetwork"
+      },
+      { "name": "getAllProcessPerformance",
+      "restpath":  "GET $ROOT/performance/$version/partner/$partnerID/endpoint/$endpointID/process",
+      "pluginpath": "/performance/process",
+      "returntype": "performanceProcesses"
+      },
+      { "name": "getCollectivePerformance",
+      "restpath":  "GET $ROOT/performance/$version/partner/$partnerID/endpoint/$endpointID/performanceCollection",
+      "pluginpath": "/performance/performanceCollection",
+      "returntype": "performanceCollection"
+      },
+      { "name": "getVersion",
+      "restpath":  "GET $ROOT/performance/version",
+      "pluginpath": "/performance/version",
+      "returntype": "performanceDomainVersion"
+      }
+    ]
+
+}

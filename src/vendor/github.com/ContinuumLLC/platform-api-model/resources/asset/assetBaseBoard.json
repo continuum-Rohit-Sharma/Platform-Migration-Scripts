@@ -1,0 +1,13 @@
+{ "name": "assetBaseBoard",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "product", "type": "string"},
+    { "name": "manufacturer", "type": "string"},
+    { "name": "model", "type": "string"},
+    { "name": "serialNumber", "type": "string"},
+    { "name": "version", "type": "string"},
+    { "name": "name", "type": "string"},
+    { "name": "installDate", "type": "string"}
+  ]
+}

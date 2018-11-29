@@ -1,0 +1,23 @@
+{
+    "name": "installedSoftwareMessage",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "version",
+            "type": "string"
+        },
+        {
+            "name": "publisher",
+            "type": "string"
+        },
+        {
+            "name": "installation_date",
+            "type": "timestamp"
+        }
+    ]
+}

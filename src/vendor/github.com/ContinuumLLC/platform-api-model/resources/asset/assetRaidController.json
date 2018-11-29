@@ -1,0 +1,9 @@
+{ "name": "assetRaidController",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "softwareRaid", "type": "string"},
+    { "name": "hardwareRaid", "type": "string"},
+    { "name": "vendor", "type": "string"}
+  ]
+}

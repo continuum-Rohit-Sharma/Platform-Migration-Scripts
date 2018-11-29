@@ -1,0 +1,12 @@
+{ "name": "assetMemory",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "totalPhysicalMemoryBytes", "type": "long"},
+    { "name": "totalVirtualMemoryBytes", "type": "long"},
+    { "name": "availableVirtualMemoryBytes", "type": "long"},
+    { "name": "availablePhysicalMemoryBytes", "type": "long"},
+    { "name": "totalPageFileSpaceBytes", "type": "long"},
+    { "name": "availablePageFileSpaceBytes", "type": "long"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "operatingSystem",
+  "type":  "resource",
+  "version": "2.0",
+   "attributes": [
+     { "name": "name", "type": "string" , "description": "Operating System Name"},
+     { "name": "type", "type": "string", "description": "Operating System Type (e.g. Windows / Linux / Mac)"},
+     { "name": "version", "type": "string", "description": "Operating System Version"}
+   ]
+ }

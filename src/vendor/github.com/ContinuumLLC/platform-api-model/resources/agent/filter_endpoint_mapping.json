@@ -1,0 +1,11 @@
+{   
+    "name": "FilterEndpointMapping",
+    "type":  "resource",
+    "version": "2.0",
+    "attributes": [
+        { "name": "partner", "type": "string"},
+        { "name": "client", "type": "string"},
+        { "name": "site", "type": "string"},
+        { "name": "endpoints", "type": "string[]"}
+    ]
+}

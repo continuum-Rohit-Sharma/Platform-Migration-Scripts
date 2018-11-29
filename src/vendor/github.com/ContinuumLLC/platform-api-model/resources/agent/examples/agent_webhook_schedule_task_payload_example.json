@@ -1,0 +1,8 @@
+{
+	"name": "RT100273456789778",
+	"type": "SCHEDULE",
+	"version": "2.0",
+	"timestampUTC": "2017-01-11T12:24:53.489110938Z",
+	"path": "/performance/performance/process",
+	"message": "{  \"task\": \"/schedule/performance/process/process\", \"taskInput\":  \"eyAid2ViaG9vayI6ICJodHRwOi8vbG9jYWxob3N0OjgwODAvdGVzdHVybCIsICAic3ViVHlwZSIgOiAiUlRTIiwgImFjdGlvbiIgOiAiQUREIiAsICJzY2hlZHVsZVRpbWVvdXRJblNlY29uZHMiIDoxODAsICJkYXRhQ29tcHJlc3Npb25UeXBlIjogImd6aXAifQ==\", \"executeNow\": \"false\",  \"schedule\" : \"@every 30s\"}"
+}

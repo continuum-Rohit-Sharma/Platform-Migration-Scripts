@@ -1,0 +1,9 @@
+{   "name": "softwareLicenses",
+    "type": "resource",
+    "version": "2.0",
+    "attributes": [
+      { "name": "productName", "type": "string"},
+      { "name": "productID", "type": "string"},
+      { "name": "productKey", "type": "string"}
+    ]
+}

@@ -1,0 +1,11 @@
+{    
+    "RMMAgentBackupINIFilePath" : "..\\appManager\\SaazMobile_juno.ini",
+    "RMMAgentINIFilePath" : "..\\appManager\\SaazMobile.ini",    
+    "AppManagerLogFilePath" : "..\\appManager\\AppManager.log",
+    "AgentCorePath":"..\\agentcore\\platform-agent-core.exe",
+    "AgentConfigFilePath":"..\\config\\platform_agent_core_cfg.json",
+    "AgentLogFilePath":"..\\log\\platform_agent_core.log",
+    "JunoAgentURL":"",
+    "JunoAgentExeLocation":"",    
+    "UnsupportedOS":"vista,xp,2000,98"
+}

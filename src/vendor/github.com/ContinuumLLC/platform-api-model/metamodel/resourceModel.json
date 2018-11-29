@@ -1,0 +1,10 @@
+{ "name": "resourceModel",
+ "type":  "metamodel",
+ "version": "2.0",
+  "attributes": [
+    { "name": "name", "type": "string", "description": "Name of the solution vertical"},
+    { "name": "type", "type": "string", "value": "resource"},
+    { "name": "version", "type": "string", "description": "API version to support this resource model"},
+    { "name": "attributes", "type": "resourceAttribute[]", "description": "Details of individual attributes for this resource class"}
+    ]
+}

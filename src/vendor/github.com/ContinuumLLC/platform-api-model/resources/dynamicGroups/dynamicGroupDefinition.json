@@ -1,0 +1,43 @@
+{
+    "name": "dynamicGroupDefinition",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+        {
+            "name": "id",
+            "type": "uuid"
+        },
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "query",
+            "type": "string"
+        },
+        {
+            "name": "created_at",
+            "type": "timestamp"
+        },
+        {
+            "name": "updated_at",
+            "type": "timestamp"
+        },
+        {
+            "name": "created_by",
+            "type": "string"
+        },
+        {
+            "name": "client",
+            "type": "string"
+        },
+        {
+            "name": "partner",
+            "type": "string"
+        },
+        {
+            "name": "site",
+            "type": "string"
+        }
+    ]
+}

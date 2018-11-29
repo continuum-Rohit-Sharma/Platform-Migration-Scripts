@@ -1,0 +1,38 @@
+{ 
+     "createTimeUTC": "2016-10-04T11:24:53.489110939Z",
+     "createdBy": "/continuum/agent/plugin/performance",
+     "type": "processor", 
+     "name": "processor1",
+     "index": 0,
+      "metric" : {
+          "numOfProcesses": 1000,
+          "percentUserTime": 50,
+          "percentSystemTime": 50,
+          "percentIOTime": 0,
+          "percentUtil": 100,
+          "percentIdleTime": 0,
+          "percentInterruptTime": 60,
+          "interruptsPerSec": 45
+      },
+     "processorQueueLength": "725",
+     "numOfCores": 1,
+     "cores": [
+     	{ 
+     		"createTimeUTC": "2016-10-04T11:24:53.489110939Z",
+     		"createdBy": "/continuum/agent/plugin/performance",
+    		 "type": "core", 
+    		 "name": "core1",
+    		 "index": 0,
+         "metric" : {
+            "numOfProcesses": 1000,
+            "percentUserTime": 50,
+            "percentSystemTime": 50,
+            "percentIOTime": 0,
+            "percentUtil": 100,
+            "percentIdleTime": 0,
+            "percentInterruptTime": 60,
+            "interruptsPerSec": 45
+         }
+   		}
+     ]
+   }

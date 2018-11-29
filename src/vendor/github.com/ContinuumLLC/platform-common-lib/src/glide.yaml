@@ -1,0 +1,82 @@
+package: github.com/ContinuumLLC/platform-common-lib/src
+import:
+- package: github.com/Shopify/sarama
+  version: platform-kafka-1.0
+  repo: https://github.com/ContinuumLLC/godep-shopify-sarama
+- package: github.com/bsm/sarama-cluster
+  version: platform-kafka-1.0
+  repo: https://github.com/ContinuumLLC/godep-bsm-sarama-cluster
+- package: github.com/gocql/gocql
+- package: github.com/golang/mock
+  subpackages:
+  - gomock
+- package: github.com/gorilla/mux
+  version: ^1.1.0
+- package: github.com/pkg/errors
+  version: ^0.8.0
+- package: github.com/eapache/go-resiliency
+  version: platform-kafka-1.0
+  repo: https://github.com/ContinuumLLC/godep-eapache-go-resiliency
+  subpackages:
+  - breaker
+- package: github.com/golang/snappy
+  version: platform-kafka-1.0
+  repo: https://github.com/ContinuumLLC/godep-golang-snappy
+- package: github.com/davecgh/go-spew
+  version: platform-kafka-1.0
+  repo: https://github.com/ContinuumLLC/godep-davecgh-go-spew
+  subpackages:
+  - spew
+- package: github.com/eapache/go-xerial-snappy
+  version: platform-kafka-1.0
+  repo: https://github.com/ContinuumLLC/godep-eapache-go-xerial-snappy
+- package: github.com/eapache/queue
+  version: platform-kafka-1.0
+  repo: https://github.com/ContinuumLLC/godep-eapache-queue
+- package: github.com/klauspost/crc32
+  version: platform-kafka-1.0
+  repo: https://github.com/ContinuumLLC/godep-klauspost-crc32
+- package: github.com/pierrec/lz4
+  version: platform-kafka-1.0
+  repo: https://github.com/ContinuumLLC/godep-pierrec-lz4
+- package: github.com/pierrec/xxHash
+  version: platform-kafka-1.0
+  repo: https://github.com/ContinuumLLC/godep-pierrec-xxHash
+  subpackages:
+  - xxHash32
+- package: github.com/rcrowley/go-metrics
+  version: platform-kafka-1.0
+  repo: https://github.com/ContinuumLLC/godep-rcrowley-go-metrics
+- package: github.com/satori/go.uuid
+  version: ^1.1.0
+- package: github.com/google/uuid
+  version: "0.2"
+- package: github.com/StackExchange/wmi
+- package: github.com/Microsoft/go-winio
+- package: github.com/go-ole/go-ole
+- package: github.com/samuel/go-zookeeper
+  version: e6b59f6144beb8570562539c1898a0b1fea34b41
+  subpackages:
+  - zk
+- package: github.com/robfig/cron
+  version: 736158dc09e10f1911ca3a1e1b01f11b566ce5db
+- package: github.com/ContinuumLLC/platform-api-model
+  version: b1f30016bfaa0075785211a6a261a1f671e7eb67
+- package: github.com/coocood/freecache
+  version: a47e26eb67ac2657e4b5a62b1975bb2b65e0b8b3
+- package: gopkg.in/jarcoal/httpmock.v1
+  version: cf52904a3cf0f78f199ecade6a6df8e245d5b25a
+- package: github.com/snowflakedb/gosnowflake
+  version: 9baa3151d07674df59b48a0ccd62066657f12ee6
+- package: github.com/stretchr/testify
+- package: github.com/maraino/go-mock
+  version: 4c74c434cd3a9e9a70ed1eeb56646a1d3fac372f
+- package: github.com/prometheus/client_golang
+  version: v0.9.0
+- package: github.com/beorn7/perks
+- package: github.com/golang/protobuf
+  version: v1.2.0
+- package: github.com/prometheus/client_model
+- package: github.com/prometheus/common
+- package: github.com/prometheus/procfs
+- package: github.com/matttproud/golang_protobuf_extensions

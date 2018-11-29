@@ -1,0 +1,13 @@
+{ "name": "app",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "name", "type": "string" , "description": "Name of this application"},
+    { "name": "type", "type": "string", "description": "Type is app unless newer types of specific applications are introduced"},
+    { "name": "version", "type": "string", "description": "The request structure API version"},
+    { "name": "timestampUTC", "type": "string", "description": "UTC time when the request originated"},
+    { "name": "path", "type": "string", "description": "path is used to identify for which the message is meant. Since all app messages are handled by Agent core this field will be blank."},    
+    { "name": "action", "type": "string", "description": "Action to be undertaken with resect to the application. Actions can be install/uninstall etc"},
+    { "name": "packageName", "type": "string", "description": "Name of the application on which action is to be taken"}
+  ]
+}

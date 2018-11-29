@@ -1,0 +1,23 @@
+{ "name": "assetUser",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "userID", "type": "string"},
+    { "name": "username", "type": "string"},
+    { "name": "domainName", "type": "string", "description": "Name of the domain to which a user account belongs"},
+    { "name": "userType", "type": "string", "description":"Where a guest or Admin account"},
+    { "name": "accountType", "type": "string", "description":"Where local, domain or microsoft account type"},
+    { "name": "userDisabled", "type": "boolean","description":"Whether Enable/Disabled"},
+    { "name": "userLockout", "type": "boolean","description":"Is User account locked out"},    
+    { "name": "passwordRequired", "type": "boolean", "description":"Account requires a password or not"},    
+    { "name": "passwordChangeable", "type": "boolean"},
+    { "name": "remoteDesktopAllowed", "type": "boolean"},
+    { "name": "passwordExpires", "type": "boolean"},
+    { "name": "passwordComplexityEnabled", "type": "boolean"},
+    { "name": "lockoutThreshold", "type": "int"},
+    { "name": "lockoutDurationMins", "type": "int"},
+    { "name": "lastLogonTimestamp", "type": "int"},
+    { "name": "remoteAccessAllowed", "type": "bool"},
+    { "name": "systemRole", "type": "string"}
+  ]
+}

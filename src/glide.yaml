@@ -1,0 +1,14 @@
+package: github.com/ContinuumLLC/platform-Migration-Script/src
+import:
+- package: github.com/ContinuumLLC/platform-api-model
+  version : 51d103d98a0419fc56c1b8398563ed48ac75ba01
+  subpackages:
+  - clients/model/Golang/resourceModel/asset
+- package: github.com/ContinuumLLC/platform-common-lib
+  version: 3b5d25fc1ee72ba42be92628b3252e110bff204d
+  subpackages:
+  - src/exception
+  - src/utils
+- package: github.com/gocql/gocql
+- package: github.com/xuri/excelize
+

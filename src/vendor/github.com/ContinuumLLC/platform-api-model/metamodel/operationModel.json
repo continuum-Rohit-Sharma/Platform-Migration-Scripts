@@ -1,0 +1,11 @@
+{ "name": "operation",
+ "type":  "metamodel",
+ "version": "2.0",
+  "attributes": [
+    { "name": "name", "type": "string", "description": "Name of the operation. For operations that have both REST and Plugin implementations the name applies to both. An operation doesn't necessarily need to have both REST and Plugin implementations."},
+    { "name": "restpath", "type": "string", "value": "The canonical form of the full REST URL"},
+    { "name": "scope", "type": "string", "description": "public, partner, or private"},
+    { "name": "pluginpath", "type": "string", "description": "The plugin path used by the Agent core to invoke the operation on solutions plugin"},
+    { "name": "returntype", "type": "string", "description": "the return value of the API, a resource type or an array of resource type"}
+    ]
+}

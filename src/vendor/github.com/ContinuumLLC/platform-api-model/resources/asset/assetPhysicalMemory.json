@@ -1,0 +1,9 @@
+{ "name": "assetPhysicalMemory",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "manufacturer", "type": "string"},   
+    { "name": "serialNumber", "type": "string"},
+    { "name": "sizeBytes", "type": "long"}
+  ]
+}

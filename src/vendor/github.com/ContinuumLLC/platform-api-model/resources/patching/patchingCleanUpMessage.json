@@ -1,0 +1,8 @@
+{
+    "name": "patchingCleanUpInputMessage",
+    "type": "resource",
+    "version": "2.0",
+    "attributes": [
+        { "name": "downloadFolderPath", "type": "string", "description": "Path to downloaded folder"}
+    ]
+}

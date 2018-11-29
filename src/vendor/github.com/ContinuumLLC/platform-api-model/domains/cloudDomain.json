@@ -1,0 +1,27 @@
+{   "name": "cloudDomain",
+    "type":  "domain",
+    "version": "2.0",
+    "applicableEntities": [
+       { "name": "accounts", "type": "resource", "version": "2.0"},
+       { "name": "account", "type": "resource", "version": "2.0"},
+       { "name": "resource", "type": "resource", "version": "2.0"}
+      ],
+    "operations": [
+         {  "name": "saveAuthorization",
+            "scope": "public",
+            "restpath":  "POST $ROOT/cloud/$version-string/partner/$partnerID/authorization",
+            "returntype": "void" 
+         },
+         {  "name": "getAllCloudAccounts",
+            "scope": "private",
+            "restpath":  "PUT $ROOT/cloud/$version-string/partner/$partnerID/accounts",
+            "returntype": "void" 
+         },
+         {
+          "name": "getAllHierarchyValues",
+          "scope": "private",
+          "restpath":  "PUT $ROOT/cloud/$version-string/partner/$partnerID/accounts/$accountID/$hierarchyTitle",
+          "returntype": "void" 
+        }
+      ]
+}   

@@ -1,0 +1,73 @@
+{ "name": "agentDomain",
+ "type":  "domain",
+ "version": "2.0",
+  "applicableEntities": [
+    { "name": "agent", "type": "resource", "version": "2.0"},
+    { "name": "mailboxMessage", "type": "resource", "version": "2.0"},
+    { "name": "errorMessage", "type":"resource", "version": "2.0"},
+  	{ "name": "provisioningData", "type":"resource", "version": "2.0"},
+    { "name": "endpointID", "type":"resource", "version": "2.0"},
+    { "name": "agentVersion", "type":"resource", "version": "2.0"}
+   ],
+ "operations": [
+      { "name": "getVersion",
+      "restpath":  "GET $ROOT/agent/version",
+      "returntype": "agentDomainVersion" 
+      },
+      { 
+      "name": "getMessage",
+      "restpath":  "GET $ROOT/agent/$version-string/$endpointID/mailbox/$messageID",
+      "returntype": "mailboxMessage"
+      },
+      { 
+      "name": "getAllMessage",
+      "restpath":  "POST $ROOT/agent/$version-string/$endpointID/mailbox/search",
+      "returntype": "mailboxMessage[]"
+      },
+      { 
+      "name": "deleteMessage",
+      "restpath":  "GET $ROOT/agent/$version-string/$endpointID/mailbox/$messageID",
+      "returntype": "void"
+      },
+      { 
+      "name": "execute",
+      "restpath":  "POST $ROOT/agent/$version-string/$endpointID/execute",
+      "returntype": "void"
+      },
+      {
+        "name": "getAllError",
+        "restpath" : "GET $ROOT/agent/$version-string/$endpointID/errors",
+        "returntype": "errorMessage[]"
+      },
+      {
+        "name": "getProvisioningData",
+        "restpath" : "GET $ROOT/agent/$version-string/partner/$partnerID/endpoint/$endpointID/registration",
+        "returntype": "provisioningData"
+      },
+      {
+        "name": "agentProvisioning",
+        "restpath" : "POST $ROOT/agent/$version-string/registration",
+        "returntype": "endpointID"
+      },
+      {
+        "name": "agentGlobalManifest",
+        "restpath" : "POST $ROOT/agent/$version-string/partner/{partner-ID}/endpoint/{endpoint-ID}/manifest",
+        "returntype": "globalManifest"
+      },
+      {
+        "name": "agentVersionByEndpoint",
+        "restpath" : "GET $ROOT/agent/$version-string/partner/{partner-ID}/endpoint/{endpoint-ID}/agentVersion",
+        "returntype": "agentVersion[]"
+      },
+      {
+        "name": "agentVersionByPartner",
+        "restpath" : "GET $ROOT/agent/$version-string/partner/{partner-ID}/agentVersion",
+        "returntype": "agentVersion[]"
+      },
+      {
+        "name": "agentVersion",
+        "restpath" : "POST $ROOT/agent/$version-string/endpoint/{endpoint-ID}/agentVersion",
+        "returntype": "void"
+      }
+    ]
+}

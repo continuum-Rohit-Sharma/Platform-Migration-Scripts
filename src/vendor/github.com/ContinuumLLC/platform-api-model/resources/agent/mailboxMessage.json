@@ -1,0 +1,12 @@
+{ "name": "mailboxMessage",
+ "type":  "resource",
+ "version": "2.0",
+ "attributes": [
+    { "name": "name", 			  "type": "string", "description": "Name of the request."},
+    { "name": "type", 			  "type": "string", "description": "Type of the request. It can be schedule/configuration/ etc"},
+    { "name": "version", 		  "type": "string", "description": "The request structure API version"},
+    { "name": "timestampUTC", "type": "string", "description": "UTC time when the request originated"},
+    { "name": "path", 			  "type": "string", "description": "Agent path that will handle this request"},	
+    { "name": "message", 		  "type": "string", "description": "Actual message payload contained in the request"}
+   ]
+}

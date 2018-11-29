@@ -1,0 +1,36 @@
+{ "name": "assetDomain",
+ "type":  "domain",
+ "version": "2.0",
+  "applicableEntities": [
+    { "name": "assetCollection", "type": "resource", "version": "2.0"}
+  ],
+  "operations": [
+    { "name": "getAllAssetCollection",
+      "restpath":  "GET $ROOT/asset/$endpointID",
+      "scope": "public",
+      "pluginpath": "/asset",
+      "returntype": "assetCollection"
+    },
+	{ "name": "getVersion",
+	"restpath":  "GET $ROOT/asset/version",
+	"scope": "public",
+	"returntype": "version"
+	},
+	{ "name": "getHealthcheck",
+	"restpath":  "GET $ROOT/asset/healthCheck",
+	"scope": "public",
+	"returntype": "health"
+	},
+  { "name": "getPartnerWiseAsset",
+	"restpath":  "GET $ROOT/asset/$version/partner/$partner_id/endpoints",
+	"scope": "public",
+	"returntype": "assetCollection[]"
+	}
+	,
+  { "name": "getPartnerEndpointAsset",
+	"restpath":  "GET $ROOT/asset/$version/partner/$partnerId/endpoints/$endpointId",
+	"scope": "public",
+	"returntype": "assetCollection"
+	}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "operation",
+  "type":  "resource",
+  "version": "2.0",
+   "attributes": [
+     { "name": "type", "type": "string", "description": "Service / File / Configuration"},
+     { "name": "action", "type": "string", "description": "Action to be taken by the Installation manager"},
+     { "name": "name", "type": "string", "description": "Service / File Name"},
+     { "name": "restoreOnFailure", "type": "boolean", "description": "Restore current package in Failure ?"},
+     { "name": "installationPath", "type": "string", "description": "Relative installation path"},
+     { "name": "URL", "type": "string", "description": "Only used for download : Only applicable for Download action"},
+     { "name": "fileHash", "type": "string", "description": "Hash value of a file to validate"},
+     { "name": "arguments", "type": "string[]", "description": "Command line argument for 3rd party software : Only applicable for execute action"},
+     { "name": "readResult", "type": "boolean", "description": "Do we need to communication between the Installer and Installation Manager : Only applicable for execute action"},
+     { "name": "input", "type": "string", "description": "Input values for communication between the Installer and Installation Manager : Only applicable for execute action"}
+   ]
+ }

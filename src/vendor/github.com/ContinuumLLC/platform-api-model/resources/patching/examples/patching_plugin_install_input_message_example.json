@@ -1,0 +1,7 @@
+{
+    "executionID": "f5394628-898b-11e7-bb31-be2e44b06b34",
+    "script": {
+        "executor": "powershell",
+        "body": "Start-Process -FilePath \".\\Firefox Setup 59.0.exe\" -ArgumentList \"-ms\" -Wait"
+    }
+}

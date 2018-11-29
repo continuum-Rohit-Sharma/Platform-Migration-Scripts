@@ -1,0 +1,14 @@
+{ "name": "configuration",
+ "type":  "operation",
+ "version": "2.0",
+  "attributes": [
+    { "name": "name", "type": "string" , "description": "Name of this configuration update request."},
+    { "name": "type", "type": "string", "description": "Typically configuration"},
+    { "name": "version", "type": "string", "description": "The request structure API version"},
+    { "name": "timestampUTC", "type": "string", "description": "UTC time when the request originated"},
+    { "name": "configPath", "type": "string", "description": "Full path of the configuration update target, typically /$solution-name/config"},
+    { "name": "updateNow", "type": "boolean", "description": "If this Configuration update should be applied immediately, values are either true or false"},
+    { "name": "futureUpdateTime", "type": "string", "description": "UTC String identifying a future time when the configuration update should be performed"},
+    { "name": "configJSONDelta", "type": "string", "description": "Properly escaped JSON snippet containing the config attributes and values that are to be updated"}
+  ]
+}

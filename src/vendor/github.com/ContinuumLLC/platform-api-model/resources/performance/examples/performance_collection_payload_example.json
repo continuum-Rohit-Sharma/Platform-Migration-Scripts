@@ -1,0 +1,169 @@
+{
+	"createTimeUTC": "2016-11-24T11:24:53.489110939Z",
+	"createdBy": "/continuum/agent/plugin/performance",
+    "name": "performanceCollection",
+	"type": "performanceCollection",
+	"endpointID":"",
+	"partnerID":"",
+	"clientID":"",
+	"siteID":"",
+    "processors": { 
+        "createTimeUTC": "2016-10-04T11:24:53.489110939Z",
+        "createdBy": "/continuum/agent/plugin/performance",
+        "type": "processors",
+        "name": "processors1",
+        "index": 0,
+        "metric": {
+            "numOfProcesses": 1000,
+            "percentUserTime": 50,
+            "percentSystemTime": 50,
+            "percentIOTime": 0,
+            "percentUtil": 100,
+            "percentIdleTime": 0,
+            "percentInterruptTime": 60
+        },
+        "cpus": [{
+            "createTimeUTC": "2016-10-04T11:24:53.489110939Z",
+            "createdBy": "/continuum/agent/plugin/performance",
+            "type": "processor",
+            "name": "processor1",
+            "index": 0,
+            "metric": {
+                "numOfProcesses": 1000,
+                "percentUserTime": 50,
+                "percentSystemTime": 50,
+                "percentIOTime": 0,
+                "percentUtil": 100,
+                "percentIdleTime": 0,
+                "percentInterruptTime": 60,
+                "interruptsPerSec": 45
+            },
+            "processorQueueLength": "725",
+            "numOfCores": 1,
+            "cores": [{
+                "createTimeUTC": "2016-10-04T11:24:53.489110939Z",
+                "createdBy": "/continuum/agent/plugin/performance",
+                "type": "core",
+                "name": "core1",
+                "index": 0,
+                "metric": {
+                    "numOfProcesses": 1000,
+                    "percentUserTime": 50,
+                    "percentSystemTime": 50,
+                    "percentIOTime": 0,
+                    "percentUtil": 100,
+                    "percentIdleTime": 0,
+                    "percentInterruptTime": 60,
+                    "interruptsPerSec": 45
+                }
+            }]
+        }]
+    },    
+    "memory": {
+        "createTimeUTC": "2016-10-04T11:24:53.489110939Z",
+        "createdBy": "/continuum/agent/plugin/performance",
+        "type": "performanceMemory",
+        "name": "memory",
+        "index": 0,
+        "physicalTotalBytes" : 4294967296,
+        "physicalInUseBytes" : 2147483648,
+        "physicalAvailableBytes" : 2147483648,
+        "virtualTotalBytes" : 4294967296,
+        "virtualInUseBytes" : 2147483648,
+        "virtualAvailableBytes" : 2147483648,
+        "percentCommittedInUseBytes" : 0,
+        "committedBytes" : 0,
+        "freeSystemPageTableEntriesBytes":0,
+        "poolNonPagedBytes" : 0,
+        "pagesPerSecondBytes" :0,
+        "swapinPerSecondBytes": 0,
+        "swapoutPerSecondBytes":0,
+        "pagesOutputPerSec":0
+    },
+	"storage": {
+		"createTimeUTC": "2016-11-24T11:24:53.489110939Z",
+		"createdBy": "/continuum/agent/plugin/performance",
+		"type": "performanceStorage",
+		"name": "hda",
+		"index": 0,
+		"metric": {
+			"idleTime": 2.30,
+			"writeCompleted": 1,
+			"writeTimeMs": 1,
+			"readCompleted": 1,
+			"readTimeMs": 1,
+			"freeSpace": 5242880,
+			"usedSpaceBytes": 387730,
+			"totalSpaceBytes": 5630610,
+			"diskTimeTotal": 686.30
+		},
+		"partitions": [{
+			"createTimeUTC": "2016-11-24T11:24:53.489110939Z",
+			"createdBy": "/continuum/agent/plugin/performance",
+			"type": "performanceStoragePartition",
+			"name": "hda1",
+			"index": 0,
+			"metric": {
+				"idleTime": 1.21,
+				"writeCompleted": 1,
+				"writeTimeMs": 1,
+				"readCompleted": 1,
+				"readTimeMs": 1,
+				"freeSpace": 2097152,
+				"usedSpaceBytes": 143865,
+				"totalSpaceBytes": 2241017,				
+				"diskTimeTotal": 1.99
+			}
+        }]
+    },
+    "network":{ 
+        "createTimeUTC": "2016-11-28T11:24:53.489110939Z",
+        "createdBy": "/continuum/agent/plugin/performance",
+        "type": "performanceNetwork", 
+        "name": "network",
+        "index": 0,
+        "interface" : [{
+            "createTimeUTC": "2016-11-28T11:24:53.489110939Z",
+            "createdBy": "/continuum/agent/plugin/performance",
+            "type": "performanceNetworkInterface", 
+            "name": "interface",
+            "index": 0,
+            "receivedBytes": 2016,
+            "totalBytesPerSec": 2016,
+            "txQueueLength": 0,
+            "rxQueueLength": 0,
+            "receivedBytesPerSec":0,
+            "transmittedBytesPerSec":0
+        }]
+    },
+    "process":{
+        "createTimeUTC": "2016-12-08T11:24:53.489110939Z",
+        "createdBy": "/continuum/agent/plugin/performance",
+        "type": "performanceProcess",
+        "name": "process",
+        "processes": [{
+            "createTimeUTC": "2016-12-08T11:24:53.489110939Z",
+            "createdBy": "/continuum/agent/plugin/performance",
+            "type": "performanceProcess",
+            "name": "firefox",
+            "processID": 2043,
+            "index": 0,
+            "percentCPUUsage": 22.3,
+            "handleCount": 10,
+            "threadCount": 15,
+            "privateBytes": 28989776
+        },
+        {
+            "createTimeUTC": "2016-12-08T11:24:53.489110939Z",
+            "createdBy": "/continuum/agent/plugin/performance",
+            "type": "performanceProcess",
+            "name": "gnome-system-mo",
+            "processID":4586,
+            "index": 2,		
+            "percentCPUUsage": 4.5,
+            "handleCount": 6,
+            "threadCount": 2,
+            "privateBytes": 1500
+        }]
+    }
+}

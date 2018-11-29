@@ -1,0 +1,106 @@
+{
+    "Name": "Platform-Agent-Core",
+    "Type": "Core",
+    "Version": "${version}",
+    "MinimumAgentVersion": "${minimumVersion}",
+    "UnsupportedOS": [
+        {
+            "type": "Windows",
+            "version": "6.1",
+            "name": "XP"
+        },
+        {
+            "type": "Windows",
+            "version": "6.4",
+            "name": "Vista"
+        }
+    ],
+    "SupportedArch": [
+        "i386"
+    ],
+    "Backup": [
+        "/version"
+    ],
+    "Operations": [
+        {
+            "Type": "Service ",
+            "Name": "ITSPlatformManager",
+            "Action": "Stop"
+        },
+        {
+            "Type": "Service ",
+            "Name": "ITSPlatform",
+            "Action": "Stop"
+        },
+        {
+            "Type": "File",
+            "Name": "#{platformAgentCoreBinaryName}",
+            "InstallationPath": "/agentcore",
+            "FileHash": "${platformAgentCoreHash}",
+            "Action": "Replace",
+            "RestoreOnFailure": true
+        },
+        {
+            "Type": "Configuration",
+            "Name": "platform_agent_core_cfg.json",
+            "InstallationPath": "/config",
+            "FileHash": "${platformAgentCoreConfigHash}",
+            "Action": "Add",
+            "RestoreOnFailure": true
+        },
+        {
+            "Type": "Configuration",
+            "Name": "platform_agent_schedule_cfg.json",
+            "InstallationPath": "/config",
+            "FileHash": "${platformAgentCoreScheduleConfigHash}",
+            "Action": "Add",
+            "RestoreOnFailure": true
+        },
+        {
+            "Type": "Configuration",
+            "Name": "platform_agent_schedule_remove_cfg.json",
+            "InstallationPath": "/config",
+            "FileHash": "${platformAgentCoreScheduleRemoveConfigHash}",
+            "Action": "Remove",
+            "RestoreOnFailure": true
+        },
+        {
+            "Type": "Service ",
+            "Name": "ITSPlatform",
+            "Action": "Start",
+            "RestoreOnFailure": true
+        },
+        {
+            "Type": "Service ",
+            "Name": "ITSPlatformManager",
+            "Action": "Start",
+            "RestoreOnFailure": true
+        }
+    ],
+    "UninstallOperations": [
+        {
+            "Type": "File",
+            "Name": "#{BinaryName}",
+            "InstallationPath": "/plugin/version",
+            "FileHash": "${platformversionplugin}",
+            "Action": "remove",
+            "RestoreOnFailure": true
+        },
+        {
+            "Type": "File",
+            "Name": "platform-version-plugin-cfg.json",
+            "InstallationPath": "/plugin/version",
+            "FileHash": "${platformversionplugincfg}",
+            "Action": "Remove",
+            "RestoreOnFailure": true
+        },
+        {
+            "Type": "Configuration",
+            "Name": "platform-core-plugin-cfg-remove.json",
+            "InstallationPath": "/plugin/version/platform-core-plugin-cfg.json",
+            "FileHash": "${platformcoreplugincfgremove}",
+            "Action": "Add",
+            "RestoreOnFailure": true
+        }
+    ]
+}

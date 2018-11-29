@@ -1,0 +1,25 @@
+{ 
+	"createTimeUTC": "2016-11-28T11:24:53.489110939Z",
+	"createdBy": "/continuum/agent/plugin/performance",
+	"type": "performanceNetwork", 
+	"name": "network",
+	"index": 0,
+	"endpointID":"",
+	"partnerID":"",
+	"clientID":"",
+	"siteID":"",
+	"interface" : [{
+	"createTimeUTC": "2016-11-28T11:24:53.489110939Z",
+	"createdBy": "/continuum/agent/plugin/performance",
+	"type": "performanceNetworkInterface", 
+	"name": "interface",
+	"index": 0,
+	"receivedBytes": 2016,
+	"transmittedBytes": 2016,
+	"txQueueLength": 0,
+	"rxQueueLength": 0,
+	"receivedBytesPerSec":0,
+	"transmittedBytesPerSec":0,
+	"totalBytesPerSec": 4032
+	}]
+}

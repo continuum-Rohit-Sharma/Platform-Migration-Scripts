@@ -1,0 +1,13 @@
+{ "name": "version",
+ "type":  "operation",
+ "version": "2.0",
+  "attributes": [
+    { "name": "timestampUTC", "type": "string", "description": "UTC time when the response was generated."},
+    { "name": "name", "type": "string",  "description": "Name of this instance of the response."},
+    { "name": "type", "type": "string", "description": "Response resource type."},
+    { "name": "serviceName", "type": "string", "description": "Name of the Microservice."},
+    { "name": "serviceProvider", "type": "string", "description": "The organization that built the Microservice."},
+    { "name": "serviceVersion", "type": "string", "description": "Version of this instance of the Microservice."},
+    { "name": "buildNumber", "type": "string", "description": "Build Number of this instance of the Microservice."}
+  ]
+}

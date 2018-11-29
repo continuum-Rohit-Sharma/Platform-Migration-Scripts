@@ -1,0 +1,9 @@
+{
+    "name":"accounts",
+    "type":"resource",
+    "version":"2.0",
+    "attributes":[
+        { "name": "account", "type": "array", "value":"account"}
+    ]
+
+}

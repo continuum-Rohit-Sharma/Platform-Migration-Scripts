@@ -1,0 +1,79 @@
+{
+	"createTimeUTC": "2016-11-24T11:24:53.489110939Z",
+	"createdBy": "/continuum/agent/plugin/performance",
+	"type": "performanceStorage",
+	"name": "storage",
+	"endpointID":"",
+	"partnerID":"",
+	"clientID":"",
+	"siteID":"",
+	"storages": [{
+		"createTimeUTC": "2016-11-24T11:24:53.489110939Z",
+		"createdBy": "/continuum/agent/plugin/performance",
+		"type": "performanceStorage",
+		"name": "hda",
+		"index": 0,
+		"metric": {
+			"idleTime": 2.30,
+			"writeCompleted": 1,
+			"writeTimeMs": 1,
+			"AvgDiskWriteQueueLength": 2.23,
+			"AvgDiskSecPerWrite": 4.23,
+			"readCompleted": 1,
+			"readTimeMs": 1,
+			"AvgDiskReadQueueLength": 623,
+			"AvgDiskSecPerRead": 623,			
+			"freeSpace": 5242880,
+			"usedSpaceBytes": 387730,
+			"totalSpaceBytes": 5630610,
+			"diskTimeTotal": 686.30
+		},
+		"partitions": [{
+			"createTimeUTC": "2016-11-24T11:24:53.489110939Z",
+			"createdBy": "/continuum/agent/plugin/performance",
+			"type": "performanceStoragePartition",
+			"name": "hda1",
+			"index": 0,
+			"mounted": true,
+			"driveType":2,
+			"metric": {
+				"idleTime": 1.21,
+				"writeCompleted": 1,
+				"writeTimeMs": 1,
+				"AvgDiskWriteQueueLength": 1.23,
+				"AvgDiskSecPerWrite": 2.23,				
+				"readCompleted": 1,
+				"readTimeMs": 1,
+				"AvgDiskReadQueueLength": 323,
+				"AvgDiskSecPerRead": 323,				
+				"freeSpace": 2097152,
+				"usedSpaceBytes": 143865,
+				"totalSpaceBytes": 2241017,				
+				"diskTimeTotal": 1.99
+			}
+		}, {
+			"createTimeUTC": "2016-11-24T11:24:53.489110939Z",
+			"createdBy": "/continuum/agent/plugin/performance",
+			"type": "performanceStoragePartition",
+			"name": "hda2",
+			"index": 1,
+			"mounted": true,
+			"driveType":2,
+			"metric": {
+				"idleTime": 1.11,
+				"writeCompleted": 1,
+				"writeTimeMs": 1,
+				"AvgDiskWriteQueueLength": 1.23,
+				"AvgDiskSecPerWrite": 2.23,					
+				"readCompleted": 1,
+				"readTimeMs": 1,
+				"AvgDiskReadQueueLength": 323,
+				"AvgDiskSecPerRead": 323,				
+				"freeSpace": 3145728,
+				"usedSpaceBytes": 243865,
+				"totalSpaceBytes": 3389593,					
+				"diskTimeTotal": 0.056
+			}
+		}]
+	}]
+}

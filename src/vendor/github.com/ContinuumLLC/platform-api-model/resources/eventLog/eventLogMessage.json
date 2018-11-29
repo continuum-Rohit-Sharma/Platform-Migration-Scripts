@@ -1,0 +1,39 @@
+{
+  "name": "EventLogMessage",
+  "type": "resource",
+  "version": "1.0",
+  "attributes": [
+    {
+      "name": "hostname",
+      "type": "string"
+    },
+    {
+      "name": "source",
+      "type": "string"
+    },
+    {
+      "name": "facility",
+      "type": "integer"
+    },
+    {
+      "name": "severity",
+      "type": "integer"
+    },
+    {
+      "name": "eventID",
+      "type": "integer"
+    },
+    {
+      "name": "message",
+      "type": "string"
+    },
+    {
+      "name": "createdAt",
+      "type": "timestamp"
+    },
+    {
+      "name": "duplications",
+      "type": "integer"
+    }
+  ]
+}

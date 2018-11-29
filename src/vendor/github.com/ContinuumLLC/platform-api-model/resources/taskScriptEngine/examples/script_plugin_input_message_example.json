@@ -1,0 +1,9 @@
+{
+	"executionID": "f5394628-898b-11e7-bb31-be2e44b06b34",
+	"originID": "9bcf7781-8528-48c9-9ae1-8589478299c4",
+	"script": {
+		"executor": "CMD",
+		"executorVersion": 3,
+		"body": "dir > %TMP%\\tmp0\nREN %TMP%\\tmp0 %TMP%\\tmp1"
+	}
+}

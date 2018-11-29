@@ -1,0 +1,23 @@
+{
+    "name": "EntitlementDefinition",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+      {
+        "name": "partnerID",
+        "type": "string"
+      },
+      {
+        "name": "clientID",
+        "type": "string"
+      },
+      {
+        "name": "siteID",
+        "type": "string"
+      },
+      {
+        "name": "endpointID",
+        "type": "string"
+      }
+    ]
+  }

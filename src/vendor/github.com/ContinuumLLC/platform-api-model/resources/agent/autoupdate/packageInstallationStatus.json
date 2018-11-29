@@ -1,0 +1,23 @@
+{
+  "name": "packageInstallationStatus",
+  "type":  "resource",
+  "version": "2.0",
+   "attributes": [
+    { "name": "requestId", "type": "string", "description": "ID generated for a request"},
+    { "name": "manifestId", "type": "string", "description": "Manifest ID generated for a request"},
+    { "name": "messageId", "type": "string", "description": "Auto Update message ID"},
+    { "name": "packageId", "type": "string", "description": "e.g. db84c87c-568e-4442-a45d-934674660b85"},
+    { "name": "action", "type": "string", "description": "Install / Update / Uninstall"},
+    { "name": "packageName", "type": "string", "description": "e.g. Agent Core / Performance Plugin etc"},
+    { "name": "packageType", "type": "string", "description": "Core / SRP / LRP / Application"},
+    { "name": "packageDescription", "type": "string", "description": ""},
+    { "name": "packageVersion", "type": "string", "description": "Update Binary Version e.g. 1.0.916"},
+    { "name": "operatingSystemName", "type": "string", "description": "Endpoint Operating system name e.g. windows 10"},
+    { "name": "operatingSystemType", "type": "string", "description": "Endpoint Operating system type e.g. windows"},
+    { "name": "operatingSystemVersion", "type": "string", "description": "Endpoint Operating system version e.g. 6.4"},
+    { "name": "status", "type": "string", "description": "Success / Failure"},
+    { "name": "installationVariables", "type": "[]installationVariable", "description": "A key value pair for Installation variables (e.g. Unique Identification number generated for LMI upon installation)"},
+    { "name": "timestampUTC", "type": "string", "description": "Request processing timestamp"},
+    { "name": "operation", "type": "string", "description": "Operation to be performed for this package on an endpoint"}
+   ]
+ }

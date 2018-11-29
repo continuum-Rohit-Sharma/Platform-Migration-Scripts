@@ -1,0 +1,26 @@
+{"services": [{
+"serviceName": "AdobeARMservice",
+"displayName": "Adobe Acrobat Update Service",
+"executablePath": "\"C:\\Program Files (x86)\\Common Files\\Adobe\\ARM\\1.0\\armsvc.exe\"",
+"startupType": "Automatic",
+"serviceStatus": "Running",
+"logOnAs": "LocalSystem",
+"stopEnableAction": false,
+"delayedAutoStart": false,
+"win32ExitCode": 0,
+"serviceSpecificExitCode": 0
+},
+{
+"serviceName": "AJRouter",
+"displayName": "AllJoyn Router Service",
+"executablePath": "C:\\Windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted -p",
+"startupType": "Manual",
+"serviceStatus": "Stopped",
+"logOnAs": "NT AUTHORITY\\LocalService",
+"stopEnableAction": false,
+"delayedAutoStart": false,
+"win32ExitCode": 0,
+"serviceSpecificExitCode": 0
+}
+]
+}

@@ -1,0 +1,15 @@
+{ "name": "performanceStorages",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "createTimeUTC", "type": "string"},
+    { "name": "createdBy", "type": "string"},
+    { "name": "name", "type": "string"},
+	{ "name": "type", "type": "string"},
+	{ "name": "endpointID", "type": "string"},
+    { "name": "partnerID", "type": "string"},
+    { "name": "clientID", "type": "string"},
+    { "name": "siteID", "type": "string"},
+    { "name": "storages", "type": "performanceStorage[]"}
+  ]
+}

@@ -1,0 +1,11 @@
+{ "name": "assetDrivePartition",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "name", "type": "string", "description":"Name of the partition e.g. C:"},
+    { "name": "label", "type": "string",  "description":"Label or VolumeName of the partition"},
+    { "name": "fileSystem", "type": "string",  "description":"FileSystem of the partition e.g. NTFS"},
+    { "name": "description", "type": "string",  "description":"A textual description of the partition"},
+    { "name": "sizeBytes", "type": "long",  "description":"Size of the partition in bytes"}
+  ]
+}

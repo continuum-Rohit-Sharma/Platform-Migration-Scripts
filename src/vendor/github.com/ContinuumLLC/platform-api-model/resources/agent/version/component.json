@@ -1,0 +1,10 @@
+{
+  "name": "packageManifest",
+  "type":  "resource",
+  "version": "2.0",
+   "attributes": [
+     { "name": "name", "type": "string"},
+     { "name": "version", "type": "string"},
+     { "name": "lastModifiedOn", "type": "timestamp"}
+   ]
+ }

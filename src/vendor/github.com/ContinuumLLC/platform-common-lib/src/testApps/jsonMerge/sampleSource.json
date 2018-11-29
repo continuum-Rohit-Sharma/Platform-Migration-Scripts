@@ -1,0 +1,7 @@
+{
+	"level" : 1,
+	"tree1" : {
+		"tree1.prop1" : "prop1"
+	},
+	"error" : {}
+}

@@ -1,0 +1,83 @@
+{
+    "name": "systemInfo",
+    "type": "resource",
+    "version": "2.0",
+    "attributes": [
+        {
+            "name": "timestampUTC",
+            "type": "string"
+        },
+        {
+            "name": "osType",
+            "type": "string"
+        },
+        {
+            "name": "osName",
+            "type": "string"
+        },
+        {
+            "name": "osSerialNumber",
+            "type": "string"
+        },
+        {
+            "name": "osVersion",
+            "type": "string"
+        },
+        {
+            "name": "hostName",
+            "type": "string"
+        },
+        {
+            "name": "macAddress",
+            "type": "string"
+        },
+        {
+            "name": "processorID",
+            "type": "string"
+        },
+        {
+            "name": "processorType",
+            "type": "string"
+        },
+        {
+            "name": "hardDriveSerialNumber",
+            "type": "string"
+        },
+        {
+            "name": "memory",
+            "type": "string"
+        },
+        {
+            "name": "motherboardAdapter",
+            "type": "string"
+        },
+        {
+            "name": "cdromSerial",
+            "type": "string"
+        },
+        {
+            "name": "biosSerial",
+            "type": "string"
+        },
+        {
+            "name": "logicalDiskVolumeSerialNumber",
+            "type": "string"
+        },
+        {
+            "name": "virtualMachineIdentity",
+            "type": "string"
+        },
+        {
+            "name": "systemManufacturerReference",
+            "type": "string"
+        },
+        {
+            "name": "mode",
+            "type": "string"
+        },
+        {
+            "name": "endpointType",
+            "type": "string"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{ "name": "loggedOnUser",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "username", "type": "string"},
+    { "name": "sessionID", "type": "string"},
+    { "name": "sessionName", "type": "string"},
+    { "name": "status", "type": "string"},
+    { "name": "client", "type": "string"},
+    { "name": "isAdmin", "type": "bool"},
+    { "name": "logonTime", "type": "time.Time"}
+  ]
+}

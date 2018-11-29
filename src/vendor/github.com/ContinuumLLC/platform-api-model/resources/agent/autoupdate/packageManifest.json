@@ -1,0 +1,16 @@
+{
+  "name": "packageManifest",
+  "type":  "resource",
+  "version": "2.0",
+   "attributes": [
+     { "name": "name", "type": "string", "description": "Package Name"},
+     { "name": "type", "type": "string", "description": "package Type (e.g. Core / Application / SRP / LRP)"},
+     { "name": "version", "type": "string", "description": "Current Version generated while packaging on build server"},
+     { "name": "mininumAgentVersion", "type": "string", "description": "Minimum Agent Version required, if present Utility validates it before performing any operation"},
+     { "name": "operations", "type": "operation[]", "description": "Array for Operations to be performed on endpoint by installation manager"},
+     { "name": "uninstallOperations", "type": "operation[]", "description": "Array for Uninstall Operations to be performed on endpoint by installation manager while uninstallation"},
+     { "name": "unsupportedOS", "type": "operatingSystem[]", "description": "List of Operating System Supported by the Packages available in this file"},
+     { "name": "supportedArch", "type": "string[]", "description": "List of Supported Architecture for this Package (e.g. i386 / Darwin etc.)"},
+     { "name": "backup", "type": "string[]", "description": "List of files to be backed up while Installation or uninstallation"}
+   ]
+ }

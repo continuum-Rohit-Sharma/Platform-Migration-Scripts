@@ -1,0 +1,13 @@
+{ "name": "attributes",
+    "type":  "resource",
+    "version": "2.0",
+     "attributes": [
+       { "name": "disabled", "type": "boolean"},
+       { "name": "lockout", "type": "boolean"},
+       { "name": "passwordChangeable", "type": "boolean"},
+       { "name": "passwordExpires", "type": "boolean"},
+       { "name": "passwordRequired", "type": "boolean"},
+       { "name": "adminPrivileges", "type": "boolean"},
+       { "name": "passwordComplexity", "type": "boolean"}
+     ]
+}

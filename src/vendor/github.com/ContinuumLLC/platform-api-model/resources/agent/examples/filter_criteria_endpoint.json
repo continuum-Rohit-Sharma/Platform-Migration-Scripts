@@ -1,0 +1,19 @@
+{
+    "filter": "Endpoint",
+    "mapping": [
+        {
+            "partner": "123",
+            "endpoints": [
+                "1234",
+                "12441"
+            ]
+        },
+        {
+            "partner": "124",
+            "endpoints": [
+                "1244",
+                "12442"
+            ]
+        }
+    ]
+}

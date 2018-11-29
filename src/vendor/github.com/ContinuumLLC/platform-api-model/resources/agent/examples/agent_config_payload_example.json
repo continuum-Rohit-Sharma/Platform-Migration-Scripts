@@ -1,0 +1,8 @@
+{
+ "name": "Performance Plugin Config Update",
+ "type":  "configuration",
+ "version": "2.0",
+ "timestampUTC": "2017-01-11T12:34:53.489110938Z",
+ "path" : "/performance/config",
+ "message" : "{ \n \"configPath\": \"/performance/config\", \n \"updateNow\": \"true\", \n \"configJSONDelta\" : \"{ \n \"intervalInSecs\": \"30\",\n \"logFileSizeInMB\":  \"64\", \n \"messageQueueSize\" : \"120\" \n}\"}"
+}

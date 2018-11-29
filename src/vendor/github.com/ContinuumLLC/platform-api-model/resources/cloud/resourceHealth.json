@@ -1,0 +1,10 @@
+{
+    "name":"resourcehealth",
+    "type":"resource",
+    "version":"2.0",
+    "attributes":[
+        { "name": "id", "type": "string"},
+        { "name": "name", "type": "string"},
+        { "name": "availabilitystatus", "type": "string"}
+    ]
+}

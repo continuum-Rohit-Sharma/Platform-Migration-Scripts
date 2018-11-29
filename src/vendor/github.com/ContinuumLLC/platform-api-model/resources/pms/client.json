@@ -1,0 +1,28 @@
+{ "name": "client",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+      { "name": "ClientID", "type": "int"},
+      { "name": "CallerGreeting", "type": "string"},
+      { "name": "ClientMainPhoneNo", "type": "string"},
+      { "name": "CreationDt", "type": "string"},
+      { "name": "DisabledON", "type": "string"},
+      { "name": "IsEnabled", "type": "boolean"},
+      { "name": "MemberId", "type": "int"},
+      { "name": "Proxy", "type": "boolean"},
+      { "name": "SiteAddress", "type": "string"},
+      { "name": "SiteAddress2", "type": "string"},
+      { "name": "SiteCity", "type": "string"},
+      { "name": "SiteCountry", "type": "int"},
+      { "name": "SiteName", "type": "string"},
+      { "name": "SitePostalCode", "type": "string"},
+      { "name": "SiteState", "type": "int"},
+      { "name": "Sitecode", "type": "string"},
+      { "name": "Status", "type": "int"},
+      { "name": "TimeStamp", "type": "string"},
+      { "name": "TimeZone", "type": "string"},
+      { "name": "Usr_Name", "type": "int"},
+      { "name": "Operation", "type": "int"}
+    ]
+  }
+  

@@ -1,0 +1,10 @@
+vendor
+*.exe
+cover.out
+/src/cobertura.xml
+*.out
+.vscode
+src/cover-cobertura.xml
+src/logging/log.log
+src/testApps/sync/log.log
+.idea

@@ -1,0 +1,42 @@
+{
+	"name": "userAccountDomain",
+	"type": "domain",
+	"version": "2.0",
+	"applicableEntities": [{
+			"name": "userAccountCollection",
+			"type": "resource",
+			"version": "2.0"
+		},
+		{
+			"name": "errorMessage",
+			"type": "resource",
+			"version": "2.0"
+		},
+		{
+			"name": "endpointID",
+			"type": "resource",
+			"version": "2.0"
+		}
+	],
+	"operations": [
+		{
+			"name": "getAllUserAccountCollection",
+			"restpath": "GET $ROOT/userAccount/$endpointID",
+			"scope": "public",
+			"pluginpath": "/userAccount",
+			"returntype": "userAccountCollection"
+		},
+		{
+			"name": "getVersion",
+			"restpath": "GET $ROOT/userAccount/version",
+			"scope": "public",
+			"returntype": "version"
+		},
+		{
+			"name": "getHealthcheck",
+			"restpath": "GET $ROOT/userAccount/health",
+			"scope": "public",
+			"returntype": "health"
+		}
+	]
+}

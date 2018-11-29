@@ -1,0 +1,15 @@
+{ "name": "assetSystem",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "product", "type": "string"},
+    { "name": "model", "type": "string"},
+    { "name": "timeZone", "type": "string"},
+    { "name": "timeZoneDescription", "type": "string"},
+    { "name": "serialNumber", "type": "string"},
+    { "name": "systemName", "type": "string"},
+    { "name": "category", "type": "string"},
+    { "name": "domain", "type": "string"},
+    { "name": "domainRole", "type": "int"}
+  ]
+}

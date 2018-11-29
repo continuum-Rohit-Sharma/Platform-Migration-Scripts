@@ -1,0 +1,26 @@
+{ "name": "assetNetwork",
+ "type":  "resource",
+ "version": "2.0",
+  "attributes": [
+    { "name": "vendor", "type": "string"},
+    { "name": "product", "type": "string"},
+    { "name": "dhcpEnabled", "type": "boolean"},
+    { "name": "dhcpServer", "type": "string"},
+    { "name": "dhcpLeaseObtained", "type": "string"},      
+    { "name": "dhcpLeaseExpires", "type": "string"},
+    { "name": "dnsServers", "type": "string[]"},
+    { "name": "ipEnabled", "type": "boolean"},    
+    { "name": "ipv4", "type": "string"},
+    { "name": "ipv4List", "type": "string[]"},
+    { "name": "ipv6", "type": "string"},
+    { "name": "ipv6List", "type": "string[]"}, 
+    { "name": "subnetMask", "type": "string"},
+    { "name": "subnetMasks", "type": "string[]"},    
+    { "name": "defaultIPGateway", "type": "string"},
+    { "name": "defaultIPGateways", "type": "string[]"},     
+    { "name": "macAddress", "type": "string"},
+    { "name": "winsPrimaryServer", "type": "string"},
+    { "name": "winsSecondaryServer", "type": "string"},
+	  { "name": "logicalName", "type": "string"}
+  ]
+}

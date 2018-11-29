@@ -1,0 +1,15 @@
+{
+    "schedules": {
+        "prop": "name",
+        "value": [
+            {
+                "name": "c",
+                "value": 3
+            },
+            {
+                "name": "b",
+                "value": 20
+            }
+        ]
+    }
+}

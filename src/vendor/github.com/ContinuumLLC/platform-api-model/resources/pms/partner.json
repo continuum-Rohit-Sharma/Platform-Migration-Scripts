@@ -1,0 +1,32 @@
+{ "name": "partner",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+      { "name": "ActivedOn", "type": "string"},
+      { "name": "Address", "type": "string"},
+      { "name": "City", "type": "string"},
+      { "name": "Country", "type": "int"},
+      { "name": "DisabledOn", "type": "string"},
+      { "name": "DtRegistr", "type": "string"},
+      { "name": "EmailId", "type": "string"},
+      { "name": "FreezeEffectedOn", "type": "string"},
+      { "name": "Freezereason", "type": "string"},
+      { "name": "HD_Region", "type": "string"},
+      { "name": "ISFreezed", "type": "boolean"},
+      { "name": "IsActive", "type": "boolean"},
+      { "name": "Logo", "type": "string"},
+      { "name": "MemberCode", "type": "string"},
+      { "name": "MemberId", "type": "int"},
+      { "name": "MemberName", "type": "string"},
+      { "name": "MobileNo", "type": "string"},
+      { "name": "SalesForceRefAccID", "type": "string"},
+      { "name": "State", "type": "string"},
+      { "name": "Status", "type": "int"},
+      { "name": "TelNo", "type": "string"},
+      { "name": "TimeStamp", "type": "string"},
+      { "name": "UnFreezeEffectedOn", "type": "string"},
+      { "name": "ZipCode", "type": "string"},
+      { "name": "Operation", "type": "int"}
+    ]
+  }
+  

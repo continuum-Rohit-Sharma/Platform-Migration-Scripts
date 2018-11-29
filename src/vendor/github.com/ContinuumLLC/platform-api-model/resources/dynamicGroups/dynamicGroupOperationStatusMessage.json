@@ -1,0 +1,11 @@
+{
+    "name": "dynamicGroupOperationStatusMessage",
+    "type": "resource",
+    "version": "1.0",
+    "attributes": [
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}
