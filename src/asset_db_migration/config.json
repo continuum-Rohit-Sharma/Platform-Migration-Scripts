@@ -1,6 +1,6 @@
 {
     "CassandraHostForAsset" : "127.0.0.1",
-    "CSVPath": "test.xlsx",
+    "CSVPath": "endpoints.xlsx",
     "LogFilePath" : "test.log",
     "FailureLogFilePath":"failure.txt",
     "NoOfWorkers" : 10

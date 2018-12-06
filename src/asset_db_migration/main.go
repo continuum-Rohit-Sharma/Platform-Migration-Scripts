@@ -40,9 +40,9 @@ const (
 	osTypeWindows                     = "Windows"
 	cEndpointIDSelectQuery            = "SELECT partner_id, client_id, site_id, endpoint_id,reg_id, friendly_name, agent_ts_utc, created_by,name,type,remote_address,resource_type, endpoint_type, baseboard, bios, drives, physical_memory, networks, os, processors, raidcontroller, system, installed_softwares, keyboards, mouse, monitors, physical_drives,users,services,shares,software_licenses FROM platform_asset_db.partner_asset_collection WHERE partner_id=? and endpoint_id=?"
 	insertEndpointSummaryQuery        = "INSERT INTO platform_asset_db.endpoint_summary(partner_id, site_id, client_id,endpoint_id,reg_id, name,friendly_name,remote_address, type, resource_type, endpoint_type, system, os,created_by, agent_ts_utc,dc_ts_utc) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
-	insertEndpointMappingQuery        = "INSERT INTO platform_asset_db.endpoint_mapping((partner_id,endpoint_id,site_id, client_id,reg_id,dc_ts_utc,agent_ts_utc) VALUES(?,?,?,?,?,?,?)"
-	insertEndpointServiceDetailsQuery = "INSERT INTO platform_asset_db.endpoint_service_details(partner_id,endpoint_id,service_name,details,dc_ts_utc,agent_ts_utc) VALUES(?,?,?,?,?,?)"
-	insertEndpointDetailsQuery        = "INSERT INTO platform_asset_db.endpoint_details (partner_id,endpoint_id,baseboard,bios,drives,physical_memory,networks,processors,raidcontroller,installed_softwares, keyboards, mouse, monitors, physical_drives,users,shares,software_licenses) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+	insertEndpointMappingQuery        = "INSERT INTO platform_asset_db.endpoint_mapping(partner_id,endpoint_id,site_id, client_id,reg_id,dc_ts_utc,agent_ts_utc) VALUES(?,?,?,?,?,?,?)"
+	insertEndpointServiceDetailsQuery = "INSERT INTO platform_asset_db.endpoint_service(partner_id,endpoint_id,service_name,details,dc_ts_utc,agent_ts_utc) VALUES(?,?,?,?,?,?)"
+	insertEndpointDetailsQuery        = "INSERT INTO platform_asset_db.endpoint_details (partner_id,endpoint_id,site_id,baseboard,bios,drives,physical_memory,networks,processors,raidcontroller,installed_softwares, keyboards, mouse, monitors, physical_drives,users,shares,software_licenses) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
 )
 
 func main() {
@@ -108,6 +108,7 @@ func main() {
 	}
 	close(results)
 	createReport(failureEndpoints, failureLogFilePath)
+	fmt.Printf("\nTotal failure : %v and success : %v out of %v \n", failure, success, totalNoEndpoints)
 
 }
 
@@ -160,6 +161,11 @@ func getEndpointDetails(endpoint endpointCollection) (*asset.AssetCollection, er
 }
 
 func saveDetails(asset *asset.AssetCollection) error {
+
+	if asset == nil || asset.SiteID == "" {
+		return errors.New("Asset or site Id is nil")
+	}
+	fmt.Println(asset)
 	err := saveAssetSummary(asset)
 	if err != nil {
 		return err
@@ -216,6 +222,7 @@ func saveEndpointDetails(asset *asset.AssetCollection) error {
 	return Session.Query(insertEndpointDetailsQuery,
 		asset.PartnerID,
 		asset.EndpointID,
+		asset.SiteID,
 		asset.BaseBoard,
 		asset.Bios,
 		asset.Drives,
@@ -235,11 +242,10 @@ func saveEndpointDetails(asset *asset.AssetCollection) error {
 }
 
 func saveEndpointServices(partnerID string, endpointID string, services []asset.Service) {
-
 	if len(services) < 1 {
 		return
 	}
-	for i := 0; i <= len(services); i++ {
+	for i := 0; i < len(services); i++ {
 		service := services[i]
 		svcName := service.Name
 		svcDetails := asset.ServiceDetails{
@@ -365,7 +371,7 @@ func dbMapToDBModel(data map[string]interface{}) *asset.AssetCollection {
 		assetData.PhysicalDrives = pDrives
 	}
 	assetData.Users = getUser(data)
-	assetData.Services = getServices(data)
+	assetData.Services = mapServices(data)
 	assetData.Shares = getShares(data)
 	assetData.SoftwareLicenses = getSoftwareLicenses(data)
 
@@ -430,37 +436,75 @@ func getShares(data map[string]interface{}) []asset.Share {
 	return shares
 }
 
-func getServices(data map[string]interface{}) []asset.Service {
+// func getServices(rows []map[string]interface{}) []asset.Service {
+
+// 	assetData := &asset.AssetCollection{}
+// 	result := make([]asset.Service, len(rows))
+// 	for index, rowData := range rows {
+// 		srvc := mapService(rowData)
+// 		result[index] = srvc
+// 	}
+// 	assetData.Services = result
+// 	return assetData.Services
+// }
+
+// func mapService(data map[string]interface{}) asset.Service {
+// 	if data["service_name"] == nil {
+// 		return asset.Service{}
+// 	}
+// 	detailsMap := data["details"].(map[string]interface{})
+
+// 	svcDetail := asset.ServiceDetails{
+// 		DisplayName:             utils.ToString(detailsMap["display_name"]),
+// 		ExecutablePath:          utils.ToString(detailsMap["executable_path"]),
+// 		StartupType:             utils.ToString(detailsMap["startup_type"]),
+// 		ServiceStatus:           utils.ToString(detailsMap["service_status"]),
+// 		LogOnAs:                 utils.ToString(detailsMap["logon_as"]),
+// 		StopEnableAction:        utils.ToBool(detailsMap["stop_enable_action"]),
+// 		DelayedAutoStart:        utils.ToBool(detailsMap["delayed_auto_start"]),
+// 		Win32ExitCode:           uint32(utils.ToInt(detailsMap["win32_exit_code"])),
+// 		ServiceSpecificExitCode: uint32(utils.ToInt(detailsMap["service_specific_exit_code"])),
+// 	}
+// 	return asset.Service{
+// 		Name:    utils.ToString(data["service_name"]),
+// 		Details: svcDetail,
+// 	}
+// }
+
+func mapServices(data map[string]interface{}) []asset.Service {
+	results := make([]asset.Service, 0)
 	if data["services"] == nil {
-		return nil
+		return make([]asset.Service, 0)
 	}
-
-	u := data["services"].([]map[string]interface{})
-	l := len(u)
-
-	if l <= 0 {
-		return nil
+	rows := data["services"].([]map[string]interface{})
+	for _, rowData := range rows {
+		srvc := mapService(rowData)
+		results = append(results, srvc)
 	}
-	services := make([]asset.Service, l)
+	return results
+}
 
-	for i := 0; i < l; i++ {
-		svcDetail := asset.ServiceDetails{
-			DisplayName:             utils.ToString(u[i]["display_name"]),
-			ExecutablePath:          utils.ToString(u[i]["executable_path"]),
-			StartupType:             utils.ToString(u[i]["startup_type"]),
-			ServiceStatus:           utils.ToString(u[i]["service_status"]),
-			LogOnAs:                 utils.ToString(u[i]["logon_as"]),
-			StopEnableAction:        utils.ToBool(u[i]["stop_enable_action"]),
-			DelayedAutoStart:        utils.ToBool(u[i]["delayed_auto_start"]),
-			Win32ExitCode:           uint32(utils.ToInt(u[i]["win32_exit_code"])),
-			ServiceSpecificExitCode: uint32(utils.ToInt(u[i]["service_specific_exit_code"])),
-		}
-		services[i] = asset.Service{
-			Name:    utils.ToString(u[i]["service_name"]),
-			Details: svcDetail,
-		}
+func mapService(data map[string]interface{}) asset.Service {
+	if data["service_name"] == nil {
+		return asset.Service{}
 	}
-	return services
+	// detailsMap := data["details"].(map[string]interface{})
+
+	svcDetail := asset.ServiceDetails{
+		DisplayName:             utils.ToString(data["display_name"]),
+		ExecutablePath:          utils.ToString(data["executable_path"]),
+		StartupType:             utils.ToString(data["startup_type"]),
+		ServiceStatus:           utils.ToString(data["service_status"]),
+		LogOnAs:                 utils.ToString(data["logon_as"]),
+		StopEnableAction:        utils.ToBool(data["stop_enable_action"]),
+		DelayedAutoStart:        utils.ToBool(data["delayed_auto_start"]),
+		Win32ExitCode:           uint32(utils.ToInt(data["win32_exit_code"])),
+		ServiceSpecificExitCode: uint32(utils.ToInt(data["service_specific_exit_code"])),
+	}
+	return asset.Service{
+		Name:    utils.ToString(data["service_name"]),
+		Details: svcDetail,
+	}
 }
 
 func getUser(data map[string]interface{}) []asset.User {
