@@ -1,0 +1,26 @@
+{
+    "PrintResult": true,
+    "RequestWaitInSecond": 1,
+    "ServerAddress": "https://agent.exec.itsupport247.net/agent/v1/execute",
+    "NewWebAPIURL" : "http://internal-continuum-asset-service-elb-int-1972580147.ap-south-1.elb.amazonaws.com",
+    "OldWebAPIURL" : "https://rmmapi.itsupport247.net",
+    "CassandraHostIPForAsset" : "127.0.0.1",
+    "CassandraHostIPForAgent" : "127.0.0.1",
+    "NumOfWorkers" : 10,
+    "IsDelete": false,
+    "CSVPathForPartners" : "LPR.xlsx",
+    "PartnerIds" : ["-1"],
+    "ThresholdDays" : 8,
+    "PickUninstallListFromFile" : false,
+    "IsSite": true,
+    "Messages": [
+        {
+            "name": "Uninstall",
+            "type": "APP",
+            "version": "2.0",
+            "timestampUTC": "2017-01-11T12:24:53.489110938Z",
+            "path": "",
+            "message": "{\"action\": \"uninstall\", \"appname\": \"JunoAgent\",  \"path\" : \"\", \"params\":\"\"}"
+        }
+    ]
+}

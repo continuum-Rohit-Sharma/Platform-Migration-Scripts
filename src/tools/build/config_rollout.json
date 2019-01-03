@@ -1,0 +1,22 @@
+{
+   "PrintResult": true,
+   "RequestWaitInSecond": 1,
+   "ServerAddress": "https://agent.exec.itsupport247.net/agent/v1/execute",
+   "NumOfWorkers": 4000,
+   "CSVPathForPartners": "rollout_ip.xlsx",
+   "Offset": 42,
+   "Messages": [
+      {
+         "name": "JunoAutoupdate",
+         "type": "APP",
+         "version": "1.0",
+         "timestampUTC": "2017-01-11T12:24:53.489110938Z",
+         "path": "",
+         "message": "{\"action\": \"update\", \"appname\": \"JunoAgent\",  \"path\" : \"\", \"params\":\"\"}"
+      }
+   ],
+   "ManifestVersion": "1.0.590",
+   "AgentCassandraDB": "127.0.0.1",
+   "LogFile": "UtilityLog_%s.log",
+   "NewAMS": false
+}

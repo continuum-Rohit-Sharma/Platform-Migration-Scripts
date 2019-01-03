@@ -1,0 +1,9 @@
+{
+    
+    "LegacyWebAPIURL" : "https://rmmapi.dtitsupport247.net",
+    "CassandraHostForAsset" : "172.31.1.143",
+    "NumOfWorkers" : 20,
+    "CSVPathForPartners" : "partner.csv",
+    "IsDelete": false,
+    "ResourceType" : "server"
+}
