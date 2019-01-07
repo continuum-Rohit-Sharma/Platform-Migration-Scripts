@@ -16,9 +16,6 @@ import (
 
 	"github.com/ContinuumLLC/platform-api-model/clients/model/Golang/resourceModel/asset"
 	"github.com/ContinuumLLC/platform-common-lib/src/utils"
-	//"github.com/ContinuumLLC/platform-api-model/clients/model/Golang/resourceModel/asset"
-
-	//"github.com/ContinuumLLC/platform-asset-service/src/model"
 	"github.com/gocql/gocql"
 )
 
@@ -35,6 +32,7 @@ type EndPointList struct {
 	SiteName     string `json:"siteName"`
 	SiteID       int    `json:"siteId"`
 	EndpointID   string `json:"endpointId"`
+	RegType      string `json:"regType"`
 }
 
 //Session session variable
@@ -58,6 +56,7 @@ const (
 	resourceTypeDesktop            = "Desktop"
 	resourceTypeServer             = "Server"
 	osTypeWindows                  = "Windows"
+	//updatePEMQuery                 = `update platform_agent_db.partnerendpointmap set installed = %t where endpoint_id in (%s)`
 )
 
 var configObject Config
@@ -175,7 +174,7 @@ func main() {
 	resourceType := configObject.ResourceType
 	IsDelete := configObject.IsDelete
 	if legacyWebAPIURL != "" && resourceType != "" {
-		legacyWebAPIURL = legacyWebAPIURL + "/itswebapi/v1/partner/%s/endpoints?resourceType=" + resourceType
+		legacyWebAPIURL = legacyWebAPIURL + "/v1/partner/%s/endpoints?resourceType=" + resourceType
 	}
 	cassError := getCassandraSession(assetClusterIP)
 	if cassError != nil {
@@ -250,6 +249,7 @@ func getAllLegacyAssetsByPartnerID(partnerID string) (assetCollection, error) {
 	assetColl := assetCollection{}
 	partnerID = strings.TrimSpace(partnerID)
 	requestURL := fmt.Sprintf(legacyWebAPIURL, partnerID)
+	fmt.Println("requestURL : ", requestURL)
 	res, err := http.Get(requestURL)
 	if err != nil {
 		//fmt.Println("RMM 1.0 : Error 1.0 While getting the Response for Partner Id :", partnerID)
@@ -329,6 +329,11 @@ func processParters(id int, jobs <-chan string, results chan<- PartnerMetrics, a
 			regID := EndPointList.RegID
 			endpoint := mapRegIDAsset[regID]
 			legacySiteID := strconv.Itoa(EndPointList.SiteID)
+			regType := EndPointList.RegType
+			resourceType := getResourceTypeByRegType(regType)
+			if resourceType == "" {
+				fmt.Printf("\n No resource type found for regID : %s, endpointID : %s, partnerId : %s, siteId : %s", regID, endpoint.EndpointID, endpoint.PartnerID, endpoint.SiteID)
+			}
 			if endpoint.EndpointID != "" {
 				if endpoint.SiteID == legacySiteID {
 					inSync = inSync + 1
@@ -338,7 +343,8 @@ func processParters(id int, jobs <-chan string, results chan<- PartnerMetrics, a
 				dbUpdateProcessingTime := time.Now()
 				//To update the sites and delete the existing.
 				if IsDelete {
-					errs := UpdateAndDeleteSites(endpoint, legacySiteID)
+					errs := UpdateAndDeleteSites(endpoint, legacySiteID, resourceType)
+					fmt.Printf("\n error occurred for update \n: %+v", errs)
 					//errs := UpdateFriendLyNameByEndpointID(endpoint.EID, partnerID, friendlyName)
 					dbupdatecntr = dbupdatecntr + 1
 					dbupdatett = dbupdatett + time.Since(dbUpdateProcessingTime).Seconds()
@@ -374,9 +380,24 @@ func processParters(id int, jobs <-chan string, results chan<- PartnerMetrics, a
 	fmt.Printf("Goroutine id# %d, PerThreadEndpointMetrics : DBupdate total time :  %f , instances: %d,  avg per partner: %f\n", id, dbupdatett, dbupdatecntr, dbupdatett/float64(dbupdatecntr))
 }
 
+func getResourceTypeByRegType(regType string) string {
+	switch regType {
+	case "DPMA":
+		return resourceTypeDesktop
+	case "MSMA":
+		return resourceTypeServer
+	default:
+		return ""
+	}
+}
+
 //UpdateAndDeleteSites updates and delete the endpoints
-func UpdateAndDeleteSites(endpoint endpointSummary, legacySiteID string) error {
+func UpdateAndDeleteSites(endpoint endpointSummary, legacySiteID string, resourceType string) error {
+	fmt.Println("endpoint : ", endpoint)
 	asset, err := GetEndpointData(endpoint.PartnerID, endpoint.SiteID, endpoint.EndpointID)
+	if asset == nil {
+		return fmt.Errorf("No Asset Data found for Partner Id := %s, SiteId := %s and endpoint_id=%s", endpoint.PartnerID, endpoint.SiteID, endpoint.EndpointID)
+	}
 	if err != nil {
 		return fmt.Errorf("Error Occurred while gettting the endpoint data for partner ID  :%s, endpointID : %s, SiteId : %s And err : %+v", endpoint.PartnerID, endpoint.EndpointID, endpoint.SiteID, err)
 	}
@@ -393,7 +414,9 @@ func UpdateAndDeleteSites(endpoint endpointSummary, legacySiteID string) error {
 		return fmt.Errorf("Error Occurred while Deleting the Details for PartnerID : %s, EndpointID : %s, SiteID : %s & Error : %+v", endpoint.PartnerID, endpoint.EndpointID, endpoint.SiteID, errForDel)
 	}
 	asset.SiteID = legacySiteID
+	asset.EndpointType = resourceType
 	return SaveAssets(asset)
+
 }
 
 func getCassandraSession(clusterIP string) error {
@@ -469,13 +492,13 @@ func GetEndpointData(partnerID, siteID, endpointID string) (*asset.AssetCollecti
 	var err error
 	var dbRecords []map[string]interface{}
 	dbRecords, err = Select(findEndpointSummaryQuery, partnerID, siteID, endpointID)
-	if err != nil || dbRecords == nil {
+	if err != nil || len(dbRecords) <= 0 {
 		return resAssetCollection, err
 	}
 	resAssetCollection = &asset.AssetCollection{}
 	mapSummaryData(resAssetCollection, dbRecords[0])
 	dbRecords, err = Select(findEndpointDetailsQuery, partnerID, siteID, endpointID)
-	if err == nil && dbRecords != nil {
+	if err == nil && len(dbRecords) > 0 {
 		mapDetailsData(resAssetCollection, dbRecords[0])
 	}
 	return resAssetCollection, err
@@ -918,7 +941,7 @@ func getBaseBoard(data map[string]interface{}) asset.AssetBaseBoard {
 //SaveAssets to parse Asset data to the DB data model and persist into DB
 func SaveAssets(assetData *asset.AssetCollection) error {
 	currUTCTime := time.Now().UTC()
-	errForMap := Session.Query(updateEndpointSiteMappingQuery, assetData.SiteID, assetData.PartnerID, assetData.EndpointID).Exec()
+	errForMap := Session.Query(insertEndpointMappingQuery, assetData.PartnerID, assetData.EndpointID, assetData.SiteID, assetData.ClientID, assetData.RegID, time.Now().UTC(), time.Now().UTC()).Exec()
 	if errForMap != nil {
 		return fmt.Errorf("Error Occurred while updating the mapping for endpointID : %s, partnerId : %s, err : %+v", assetData.EndpointID, assetData.PartnerID, errForMap)
 	}
